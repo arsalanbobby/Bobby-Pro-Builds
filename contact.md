@@ -1,24 +1,28 @@
 ---
 title: Contact
 permalink: /contact/
-description: Contact Bobby Pro Builds to discuss your building, renovation or landscaping project.
+description: Contact Bobby Pro Builds to discuss your building and renovation project.
 ---
 
 <section class="page-hero">
   <div class="container">
     <p class="eyebrow">Contact</p>
     <h1>Tell us about your project.</h1>
-    <p>Whether you are planning a home renovation, extension, repair or garden transformation, send us the details and we can discuss the next steps.</p>
+    <p>Call, email or WhatsApp us with your location, a short description of the work and photos if available. We can then discuss your project and the next steps.</p>
   </div>
 </section>
 
 <section class="section">
   <div class="container content-grid">
     <div class="contact-box">
-      <h2>Request a quote</h2>
-      <p>For the quickest response, include your location, the type of work required and a short description of what you would like done.</p>
-      <p><strong>Phone:</strong> Add business number</p>
-      <p><strong>Email:</strong> Add business email</p>
+      <h2>Request a free quote</h2>
+      <p><strong>Phone 1:</strong> <a href="tel:+447344304402">07344 304402</a></p>
+      <p><strong>Phone 2:</strong> <a href="tel:+447833778270">07833 778270</a></p>
+      <p><strong>Email:</strong> <a href="mailto:Quickfixhome2@gmail.com">Quickfixhome2@gmail.com</a></p>
+      <div class="actions">
+        <a class="btn" href="https://wa.me/447344304402" target="_blank" rel="noopener">WhatsApp 07344 304402</a>
+        <a class="btn" href="https://wa.me/447833778270" target="_blank" rel="noopener">WhatsApp 07833 778270</a>
+      </div>
       <p><strong>Service area:</strong> England</p>
     </div>
 
@@ -31,16 +35,6 @@ description: Contact Bobby Pro Builds to discuss your building, renovation or la
         <li>Photos of the existing space if available</li>
         <li>Your preferred timeframe</li>
       </ul>
-      <p>Once your business phone number and email address are confirmed, they can be added here along with a direct contact form.</p>
     </div>
-  </div>
-</section>
-
-<section class="section alt">
-  <div class="container">
-    <p class="eyebrow">Building & landscaping</p>
-    <h2>One contact for the whole property</h2>
-    <p class="section-intro">From bathrooms and extensions to paving, fencing and garden landscaping, Bobby Pro Builds can help with projects inside and outside your home.</p>
-    <a class="btn primary" href="{{ '/services/' | relative_url }}">View all services</a>
   </div>
 </section>
