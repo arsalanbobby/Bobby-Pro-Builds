@@ -6,7 +6,7 @@ description: Bobby Pro Builds provides professional building, renovation and pro
 <section id="home" class="hero hero-builds">
   <div class="container hero-grid">
     <div class="hero-copy">
-      <p class="eyebrow hero-eyebrow">Building better homes</p>
+      <p class="eyebrow hero-eyebrow">Building Better Homes</p>
       <h1>As You <span>Dream Of</span></h1>
       <p class="lead">Bobby Pro Builds delivers high-quality building and renovation services across England. From home improvements to full extensions, we bring your ideas to life with reliable workmanship and attention to detail.</p>
       <div class="actions">
