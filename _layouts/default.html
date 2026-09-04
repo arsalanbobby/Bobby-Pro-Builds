@@ -15,41 +15,29 @@
         <img src="{{ '/assets/logo.svg' | relative_url }}" alt="Bobby Pro Builds logo">
         <span>Bobby Pro Builds</span>
       </a>
-
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
-        <span class="sr-only">Open menu</span>
-        <span></span><span></span><span></span>
+        <span class="sr-only">Open menu</span><span></span><span></span><span></span>
       </button>
-
       <nav id="site-menu" class="site-nav" aria-label="Main navigation">
         <a href="{{ '/' | relative_url }}">Home</a>
         <a href="{{ '/services/' | relative_url }}">Services</a>
         <a href="{{ '/about/' | relative_url }}">About</a>
+        <a href="{{ '/gallery/' | relative_url }}">Gallery</a>
         <a class="nav-cta" href="{{ '/contact/' | relative_url }}">Contact</a>
       </nav>
     </div>
   </header>
-
-  <main>
-    {{ content }}
-  </main>
-
+  <main>{{ content }}</main>
   <footer class="site-footer">
     <div class="container footer-grid">
-      <div>
-        <strong>Bobby Pro Builds</strong>
-        <p>Building better homes & creating better gardens.</p>
-      </div>
-      <div>
-        <strong>Building & landscaping</strong>
-        <p>Renovations • Extensions • Landscaping • Property improvements</p>
-      </div>
+      <div><strong>Bobby Pro Builds</strong><p>Build • Renovate • Improve</p></div>
+      <div><strong>Building & renovation</strong><p>Extensions • Kitchens • Tiling • Property improvements</p></div>
     </div>
     <div class="container footer-bottom">
       <span>&copy; {{ 'now' | date: "%Y" }} Bobby Pro Builds. All rights reserved.</span>
+      <span>Building better homes. As you dream of.</span>
     </div>
   </footer>
-
   <script src="{{ '/assets/js/site.js' | relative_url }}"></script>
 </body>
 </html>
