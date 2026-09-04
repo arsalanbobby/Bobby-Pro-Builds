@@ -31,28 +31,40 @@ description: Bobby Pro Builds provides professional building, renovation and pro
     <p class="eyebrow centre">Our main services</p>
     <h2 class="centre">Building & Renovation <span class="red-text">Services</span></h2>
     <p class="section-intro centre-copy">High-quality workmanship for your home, inside and out.</p>
-    <div class="cards">
+
+    <div class="home-service-grid">
       <article class="card service-card">
-        <div class="service-photo placeholder-photo">Project photo coming soon</div>
+        <img class="service-photo" src="{{ '/assets/images/kitchen-renovation.jpg' | relative_url }}" alt="Completed modern kitchen renovation by Bobby Pro Builds">
         <div class="service-card-body">
-          <h3>Home Extensions</h3>
-          <p>Create more space with extensions tailored to your home and needs.</p>
+          <h3>Kitchen Renovations</h3>
+          <p>Complete kitchen improvements designed for practical everyday living.</p>
           <a href="{{ '/services/' | relative_url }}">Learn More →</a>
         </div>
       </article>
+
       <article class="card service-card">
-        <div class="service-photo placeholder-photo">Project photo coming soon</div>
+        <img class="service-photo" src="{{ '/assets/images/property-renovation.jpg' | relative_url }}" alt="Property renovation work in progress">
         <div class="service-card-body">
-          <h3>Loft Conversions</h3>
-          <p>Transform your loft into a practical and comfortable living space.</p>
+          <h3>Property Renovations</h3>
+          <p>Full home renovations and improvements carried out with care and attention to detail.</p>
           <a href="{{ '/services/' | relative_url }}">Learn More →</a>
         </div>
       </article>
+
       <article class="card service-card">
-        <div class="service-photo placeholder-photo">Project photo coming soon</div>
+        <img class="service-photo" src="{{ '/assets/images/interior-renovation.jpg' | relative_url }}" alt="Completed interior feature wall and tiled floor">
         <div class="service-card-body">
-          <h3>Bathroom Renovations</h3>
-          <p>Stylish and practical bathrooms completed to a professional standard.</p>
+          <h3>Interior Renovations</h3>
+          <p>Plastering, decorating, feature walls, flooring and internal finishing work.</p>
+          <a href="{{ '/services/' | relative_url }}">Learn More →</a>
+        </div>
+      </article>
+
+      <article class="card service-card">
+        <img class="service-photo" src="{{ '/assets/images/property-improvement.jpg' | relative_url }}" alt="Completed front property extension and exterior improvement">
+        <div class="service-card-body">
+          <h3>Property Improvements</h3>
+          <p>Extensions, exterior improvements and building work to improve your home.</p>
           <a href="{{ '/services/' | relative_url }}">Learn More →</a>
         </div>
       </article>
