@@ -1,0 +1,12 @@
+title: Bobby Pro Builds
+description: Professional building, renovation and landscaping services across England.
+url: "https://bobbyprobuilds.com"
+baseurl: ""
+markdown: kramdown
+permalink: pretty
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
