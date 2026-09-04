@@ -3,14 +3,14 @@ title: Home
 description: Bobby Pro Builds provides professional building, renovation and property improvement services across England.
 ---
 
-<section class="hero hero-builds">
+<section id="home" class="hero hero-builds">
   <div class="container hero-grid">
     <div class="hero-copy">
       <p class="eyebrow hero-eyebrow">Building better homes</p>
       <h1>As You <span>Dream Of</span></h1>
       <p class="lead">Bobby Pro Builds delivers high-quality building and renovation services across England. From home improvements to full extensions, we bring your ideas to life with reliable workmanship and attention to detail.</p>
       <div class="actions">
-        <a class="btn primary" href="{{ '/services/' | relative_url }}">Our Services →</a>
+        <a class="btn primary" href="#services">Our Services →</a>
         <a class="btn hero-secondary" href="{{ '/contact/' | relative_url }}">Get a Free Quote</a>
       </div>
     </div>
@@ -26,7 +26,7 @@ description: Bobby Pro Builds provides professional building, renovation and pro
   </div>
 </section>
 
-<section class="section services-showcase">
+<section id="services" class="section services-showcase">
   <div class="container">
     <p class="eyebrow centre">Our main services</p>
     <h2 class="centre">Building & Renovation <span class="red-text">Services</span></h2>
@@ -38,7 +38,7 @@ description: Bobby Pro Builds provides professional building, renovation and pro
         <div class="service-card-body">
           <h3>Kitchen Renovations</h3>
           <p>Complete kitchen improvements designed for practical everyday living.</p>
-          <a href="{{ '/services/' | relative_url }}">Learn More →</a>
+          <a href="#services">Learn More →</a>
         </div>
       </article>
 
@@ -47,7 +47,7 @@ description: Bobby Pro Builds provides professional building, renovation and pro
         <div class="service-card-body">
           <h3>Property Renovations</h3>
           <p>Full home renovations and improvements carried out with care and attention to detail.</p>
-          <a href="{{ '/services/' | relative_url }}">Learn More →</a>
+          <a href="#services">Learn More →</a>
         </div>
       </article>
 
@@ -56,7 +56,7 @@ description: Bobby Pro Builds provides professional building, renovation and pro
         <div class="service-card-body">
           <h3>Interior Renovations</h3>
           <p>Plastering, decorating, feature walls, flooring and internal finishing work.</p>
-          <a href="{{ '/services/' | relative_url }}">Learn More →</a>
+          <a href="#services">Learn More →</a>
         </div>
       </article>
 
@@ -65,9 +65,42 @@ description: Bobby Pro Builds provides professional building, renovation and pro
         <div class="service-card-body">
           <h3>Property Improvements</h3>
           <p>Extensions, exterior improvements and building work to improve your home.</p>
-          <a href="{{ '/services/' | relative_url }}">Learn More →</a>
+          <a href="#services">Learn More →</a>
         </div>
       </article>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section alt one-page-about">
+  <div class="container">
+    <p class="eyebrow centre">About us</p>
+    <h2 class="centre">Built on more than 15 years of experience</h2>
+    <p class="section-intro centre-copy">Bobby Pro Builds provides dependable building, renovation and property improvement services with practical experience, clear communication and professional workmanship.</p>
+
+    <div class="content-grid">
+      <div>
+        <h3>Our story</h3>
+        <p>With more than 15 years of hands-on experience, Bobby Pro Builds has worked across renovations, extensions, repairs, kitchens, tiling, flooring and exterior property improvements.</p>
+        <p>We focus on making each project straightforward from the first conversation through to the finished work.</p>
+      </div>
+
+      <div class="service-block">
+        <h3>How we work</h3>
+        <ul class="check-list">
+          <li>Listen carefully to what you want to achieve</li>
+          <li>Give practical advice based on your property and project</li>
+          <li>Keep communication clear throughout the work</li>
+          <li>Work carefully and respectfully in and around your home</li>
+          <li>Focus on a clean, professional finish</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cards about-cards">
+      <article class="card"><h3>15+ Years Experience</h3><p>Practical experience across building, renovation and property improvement work.</p></article>
+      <article class="card"><h3>Fully Insured</h3><p>Appropriate insurance for the work we undertake, helping give customers confidence.</p></article>
+      <article class="card"><h3>Covering England</h3><p>Contact us with your postcode and project details and we can confirm availability in your area.</p></article>
     </div>
   </div>
 </section>
