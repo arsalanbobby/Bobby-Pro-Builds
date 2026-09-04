@@ -148,3 +148,54 @@ a { color: inherit; }
   .project-grid { grid-template-columns: 1fr; }
   .service-list { columns: 1; }
 }
+
+/* Bobby Pro Builds image-approved homepage styling */
+.hero-builds {
+  position: relative;
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  color: white;
+  background:
+    linear-gradient(90deg, rgba(20,14,12,.96) 0%, rgba(32,18,15,.86) 46%, rgba(83,31,23,.58) 100%),
+    linear-gradient(135deg, #201512 0%, #713126 58%, #a64a37 100%);
+}
+.hero-builds .hero-grid { grid-template-columns: minmax(0, 650px) 1fr; }
+.hero-builds .hero-copy { padding: 18px 0; }
+.hero-builds .hero-eyebrow { color: #fff; letter-spacing: .18em; }
+.hero-builds h1 { color: #fff; font-size: clamp(3.1rem, 7vw, 6.2rem); }
+.hero-builds h1 span { color: #c9503e; }
+.hero-builds .lead { color: #f3e9e5; font-size: 1.12rem; }
+.hero-builds .hero-secondary { background: transparent; color: white; border-color: rgba(255,255,255,.85); }
+.hero-builds .hero-secondary:hover { background: white; color: var(--brand-dark); }
+.light-trust { background: #fffaf7; color: var(--text); border-bottom: 1px solid var(--border); }
+.light-trust .trust-grid > div { padding: 8px 18px; border-right: 1px solid var(--border); }
+.light-trust .trust-grid > div:last-child { border-right: 0; }
+.light-trust strong { color: var(--brand-dark); }
+.services-showcase { background: #fffdfb; }
+.centre { text-align: center; }
+.centre-copy { text-align: center; margin-left: auto; margin-right: auto; }
+.red-text { color: var(--brand); }
+.service-card { padding: 0; overflow: hidden; border-radius: 5px; }
+.service-photo { aspect-ratio: 16 / 8.7; }
+.placeholder-photo {
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #6e3a2d, #c27b62);
+  color: rgba(255,255,255,.88);
+  font-weight: 800;
+}
+.service-card-body { padding: 18px 20px 22px; }
+.service-card-body h3 { margin: 0 0 4px; font-size: 1.25rem; }
+.service-card-body p { margin: 0 0 12px; }
+.service-card-body a { color: var(--brand); font-weight: 800; text-decoration: none; }
+.site-header { border-top: 4px solid var(--brand); }
+.site-nav .nav-cta { border-radius: 4px; }
+.btn { border-radius: 4px; }
+.site-footer { background: linear-gradient(90deg, #4a1a14, #79281d, #4a1a14); }
+
+@media (max-width: 820px) {
+  .hero-builds { min-height: auto; }
+  .hero-builds .hero-grid { grid-template-columns: 1fr; }
+  .light-trust .trust-grid > div { border-right: 0; border-bottom: 1px solid var(--border); }
+}
