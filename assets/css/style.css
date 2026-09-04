@@ -247,3 +247,9 @@ a { color: inherit; }
 .contact-topbar a{color:#fff;text-decoration:none;font-weight:700;margin:0 7px}
 .contact-topbar a:hover{color:#f2b6a8}
 @media(max-width:820px){.contact-topbar{padding:9px 12px;font-size:.86rem;line-height:1.7}.contact-topbar a{display:inline-block;margin:0 4px}}
+
+/* Requested hero typography only */
+.hero-builds .hero-eyebrow{font-size:clamp(1.35rem,2.2vw,1.8rem);font-weight:900;letter-spacing:.08em;color:#fff;margin-bottom:12px}
+.hero-builds h1{font-size:clamp(2.25rem,4.5vw,4.25rem);line-height:1.05}
+.hero-builds .lead{color:#fff!important;font-size:1.15rem;font-weight:500;line-height:1.65;text-shadow:0 2px 8px rgba(0,0,0,.7)}
+@media(max-width:820px){.hero-builds .hero-eyebrow{font-size:1.25rem}.hero-builds h1{font-size:2.4rem}.hero-builds .lead{font-size:1rem}}
