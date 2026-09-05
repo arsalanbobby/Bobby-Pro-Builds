@@ -270,3 +270,106 @@ a{color:inherit}
   .service-card-body{padding:20px}
   .service-photo-card p{min-height:0}
 }
+
+
+/* Final homepage flow */
+#services{
+  background:linear-gradient(180deg,#f7f4ee 0%,#f3f5ef 100%);
+  padding-top:54px;
+  padding-bottom:58px;
+}
+.showcase-hero{
+  padding-bottom:0;
+}
+.services-trust{
+  margin-top:44px;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:0;
+  padding-top:24px;
+}
+.services-trust>div{
+  text-align:center;
+  padding:0 20px;
+  border-right:1px solid rgba(13,74,56,.18);
+}
+.services-trust>div:last-child{border-right:0}
+.services-trust strong,
+.services-trust small{display:block}
+.services-trust strong{
+  color:var(--green);
+  font-size:1rem;
+  line-height:1.2;
+}
+.services-trust small{
+  margin-top:5px;
+  color:#4d4d4d;
+  font-size:.82rem;
+}
+.services-trust .trust-icon{
+  margin-bottom:9px;
+}
+
+/* Final footer */
+.site-footer{
+  padding:0;
+  background:transparent;
+}
+.footer-slogan{
+  background:var(--green);
+  color:#fff;
+  text-align:center;
+  padding:18px 20px;
+  font-size:.75rem;
+  font-weight:800;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+}
+.footer-lower{
+  background:#07382f;
+  color:#fff;
+}
+.footer-inner{
+  min-height:76px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  color:#f3f6f4;
+}
+.social-icons{
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+.social-icon{
+  width:34px;
+  height:34px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  background:#fff;
+  color:#07382f;
+  font-weight:900;
+  font-size:1.15rem;
+  line-height:1;
+}
+.social-icon.facebook{font-family:Arial,sans-serif;font-size:1.35rem}
+.social-icon.instagram{font-size:1.35rem}
+.social-icon.tiktok{font-size:1.1rem}
+
+@media(max-width:900px){
+  .services-trust{grid-template-columns:1fr 1fr}
+  .services-trust>div{
+    padding:16px 12px;
+    border-right:0;
+    border-bottom:1px solid rgba(13,74,56,.16);
+  }
+  .services-trust>div:nth-child(odd){border-right:1px solid rgba(13,74,56,.16)}
+  .services-trust>div:nth-child(n+3){border-bottom:0}
+}
+@media(max-width:650px){
+  #services{padding-top:40px;padding-bottom:44px}
+  .footer-inner{min-height:auto;padding:18px 0;align-items:flex-start}
+  .social-icons{margin-left:auto}
+}
