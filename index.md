@@ -15,7 +15,7 @@ description: Bobby Pro Builds provides professional building, renovation and pro
       <a href="#services" class="btn btn-primary">Our Services »</a>
     </div>
     <div class="showcase-kitchen">
-      <img src="{{ '/assets/images/2ff575ca-cc75-410e-b5b4-560d87022bf0.jpg' | relative_url }}" alt="Completed modern kitchen by Bobby Pro Builds">
+      <img src="{{ '/assets/images/IMG_4849.jpg' | relative_url }}" alt="Completed modern kitchen by Bobby Pro Builds">
       <p class="kitchen-note">Beautiful<br>Spaces</p>
     </div>
   </div>
