@@ -46,14 +46,33 @@ description: Bobby Pro Builds provides professional building, renovation and pro
     <h2>Building &amp; Renovation</h2>
     <p class="section-intro">Practical, professional services for improving your home, inside and out.</p>
 
-    <div class="service-grid">
-      <article class="service-card"><h3>Renovations &amp; Improvements</h3><p>Kitchens, bathrooms, plastering, decorating, tiling, flooring and general home improvements.</p></article>
-      <article class="service-card"><h3>Extensions &amp; Conversions</h3><p>House extensions, conservatories and loft conversions to create more useful space.</p></article>
-      <article class="service-card"><h3>Exterior Work</h3><p>Roofing repairs, guttering, fascias, soffits, rendering, cladding and property improvements.</p></article>
-    </div>
+    <div class="service-grid service-photo-grid">
+      <article class="service-card service-photo-card">
+        <img src="{{ '/assets/images/IMG_4844.jpg' | relative_url }}" alt="Completed bathroom renovation by Bobby Pro Builds">
+        <div class="service-card-body">
+          <h3>Renovations &amp; Improvements</h3>
+          <p>Kitchens, bathrooms, tiling, flooring and decorating.</p>
+          <a class="service-link" href="#services" aria-label="View renovation and improvement services"><span>→</span>View Services</a>
+        </div>
+      </article>
 
-    <div class="service-list">
-      <span>Home renovations</span><span>House extensions</span><span>Loft conversions</span><span>Conservatories</span><span>Bathroom renovations</span><span>Wall &amp; floor tiling</span><span>Plastering &amp; decorating</span><span>Flooring installation</span><span>Roofing repairs</span><span>Guttering, fascias &amp; soffits</span><span>External rendering &amp; cladding</span><span>General property maintenance</span>
+      <article class="service-card service-photo-card">
+        <img src="{{ '/assets/images/07ffef1b-db2a-42eb-b80b-a46892b07543.jpg' | relative_url }}" alt="Completed extension and conversion work by Bobby Pro Builds">
+        <div class="service-card-body">
+          <h3>Extensions &amp; Conversions</h3>
+          <p>Extensions, conservatories and loft conversions.</p>
+          <a class="service-link" href="#services" aria-label="View extension and conversion services"><span>→</span>View Services</a>
+        </div>
+      </article>
+
+      <article class="service-card service-photo-card">
+        <img src="{{ '/assets/images/IMG_4842.jpg' | relative_url }}" alt="Completed exterior and landscaping work by Bobby Pro Builds">
+        <div class="service-card-body">
+          <h3>Exterior &amp; Landscaping</h3>
+          <p>Patios, paving, fencing, garden landscaping and outdoor spaces.</p>
+          <a class="service-link" href="#services" aria-label="View exterior and landscaping services"><span>→</span>View Services</a>
+        </div>
+      </article>
     </div>
   </div>
 </section>
