@@ -6,14 +6,29 @@ description: Bobby Pro Builds provides professional building, renovation and pro
 <section id="home" class="hero">
   <div class="hero-overlay">
     <div class="container hero-content">
-      <p class="hero-title">BUILDING BETTER HOMES</p>
-      <h1>As You Dream Of</h1>
+      <h1 class="hero-heading">
+        <span>Building a Better Home</span>
+        <span>As You Dream Of</span>
+      </h1>
+      <div class="hero-red-line"></div>
       <p class="hero-copy">Professional building, renovation and property improvement services with more than 15 years of hands-on experience. Reliable workmanship, clear communication and attention to detail from start to finish.</p>
       <div class="hero-actions">
-        <a href="#services" class="btn btn-primary">Our Services</a>
-        <button type="button" class="btn btn-outline js-contact-open">Get a Free Quote</button>
+        <a href="#services" class="btn btn-primary">Our Services <span aria-hidden="true">›</span></a>
+        <button type="button" class="btn btn-outline js-contact-open">Get a Quote <span aria-hidden="true">›</span></button>
       </div>
     </div>
+
+    <div class="hero-trust container" aria-label="Why choose Bobby Pro Builds">
+      <div><strong>15+ Years</strong><span>Hands-on Experience</span></div>
+      <div><strong>Reliable</strong><span>& Trusted</span></div>
+      <div><strong>Covering</strong><span>England</span></div>
+      <div><strong>Quality Work</strong><span>Inside & Out</span></div>
+    </div>
+
+    <a class="scroll-down" href="#services" aria-label="Scroll down to services">
+      <span class="scroll-chevron"></span>
+      <small>SCROLL DOWN</small>
+    </a>
   </div>
 </section>
 
