@@ -11,34 +11,32 @@
 <body>
   <header class="site-header">
     <div class="container nav-wrap">
-      <a class="brand" href="{{ '/' | relative_url }}" aria-label="Bobby Pro Builds home">
+      <a class="brand" href="{{ '/' | relative_url }}#home" aria-label="Bobby Pro Builds home">
         <img src="{{ '/assets/logo.svg' | relative_url }}" alt="Bobby Pro Builds logo">
         <span>Bobby Pro Builds</span>
       </a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
-        <span class="sr-only">Open menu</span><span></span><span></span><span></span>
-      </button>
-      <nav id="site-menu" class="site-nav" aria-label="Main navigation">
+
+      <nav class="main-nav" aria-label="Main navigation">
         <a href="{{ '/' | relative_url }}#home">Home</a>
         <a href="{{ '/' | relative_url }}#services">Services</a>
         <a href="{{ '/' | relative_url }}#about">About</a>
-        <a href="{{ '/gallery/' | relative_url }}">Gallery</a>
-        <a class="nav-cta" href="{{ '/contact/' | relative_url }}">Contact</a>
       </nav>
+
+      <button class="quick-menu-toggle" type="button" aria-expanded="false" aria-controls="quick-menu" aria-label="Open more options">
+        <span></span><span></span>
+      </button>
     </div>
   </header>
+
   <main>{{ content }}</main>
+
   <footer class="site-footer">
-    <div class="container footer-grid">
-      <div><strong>Bobby Pro Builds</strong><p>Build • Renovate • Improve</p></div>
-      <div><strong>Building & renovation</strong><p>Extensions • Kitchens • Tiling • Property improvements</p></div>
-    </div>
-    <div class="container footer-bottom">
+    <div class="container footer-inner">
+      <div><strong>Bobby Pro Builds</strong><span>Building • Renovation • Property Improvements</span></div>
       <span>&copy; {{ 'now' | date: "%Y" }} Bobby Pro Builds. All rights reserved.</span>
-      <span>Building better homes. As you dream of.</span>
     </div>
   </footer>
+
   <script src="{{ '/assets/js/site.js' | relative_url }}"></script>
-  <a class="whatsapp-float" href="https://wa.me/447344304402" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">WhatsApp</a>
 </body>
 </html>
