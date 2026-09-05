@@ -329,3 +329,48 @@
     left:29%;
   }
 }
+
+
+/* 2026-09-05 correction: reference proportions, not globally enlarged */
+@media(min-width:901px){
+  .showcase-grid{
+    min-height:560px;
+    grid-template-columns:54% 46%;
+  }
+  .showcase-copy{
+    align-self:center;
+    padding:42px 0 36px;
+  }
+  .showcase-heading{
+    max-width:700px;
+    margin:0 0 30px;
+    line-height:.94;
+  }
+  .showcase-heading span,
+  .showcase-heading strong{
+    font-size:clamp(3.55rem,5vw,4.85rem);
+  }
+  .showcase-intro{
+    max-width:690px;
+    margin:0 0 30px;
+    font-size:1rem;
+    line-height:1.5;
+  }
+  .showcase-copy .btn{
+    min-width:205px;
+    min-height:52px;
+    font-size:1rem;
+  }
+  .showcase-kitchen{
+    left:40%;
+  }
+  .showcase-kitchen img{
+    object-fit:cover;
+    object-position:center top;
+  }
+  .kitchen-note{
+    top:142px;
+    left:30%;
+    font-size:1.9rem;
+  }
+}
