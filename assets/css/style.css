@@ -296,3 +296,44 @@ a{color:inherit}
   .hero-trust>div:nth-child(-n+2){border-bottom:1px solid #ddd;padding-bottom:12px}
   .scroll-down{bottom:12px}
 }
+
+
+/* Keep the COMPLETE kitchen photo visible at every browser width.
+   Preserve the approved tablet composition instead of cropping with cover. */
+.hero{
+  min-height:0 !important;
+  height:auto !important;
+  aspect-ratio:4 / 3;
+  background-size:contain !important;
+  background-position:center center !important;
+  background-repeat:no-repeat !important;
+  background-color:#f4f1ed !important;
+}
+.hero-overlay{
+  min-height:0 !important;
+  height:100% !important;
+}
+@media (min-width:821px){
+  .hero{
+    aspect-ratio:4 / 3;
+    max-height:none;
+  }
+  .hero-content{
+    padding-top:clamp(60px,8vw,105px);
+    padding-bottom:clamp(155px,18vw,220px);
+  }
+}
+@media (max-width:820px){
+  .hero{
+    aspect-ratio:4 / 3;
+    min-height:0 !important;
+  }
+  .hero-overlay{min-height:0 !important}
+}
+@media (max-width:560px){
+  .hero{
+    aspect-ratio:4 / 3;
+    min-height:0 !important;
+  }
+  .hero-overlay{min-height:0 !important}
+}
