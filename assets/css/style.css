@@ -519,3 +519,20 @@ a{color:inherit}
   .showcase-kitchen:before{background:linear-gradient(90deg,#f7f8ee 0%,rgba(247,248,238,.94) 11%,rgba(235,244,232,.72) 25%,rgba(222,239,229,.34) 43%,rgba(222,239,229,.08) 57%,transparent 70%)}
   .kitchen-note{left:23%;top:125px}
 }
+
+
+/* 2026-09-05: approved hero typography and spacing */
+@media(min-width:901px){
+  .showcase-heading{
+    font-size:clamp(3.6rem,5.8vw,5.6rem);
+    line-height:.92;
+    margin-bottom:36px;
+  }
+  .showcase-intro{
+    margin-bottom:36px;
+    line-height:1.55;
+  }
+  .showcase-copy .btn{
+    margin-top:0;
+  }
+}
