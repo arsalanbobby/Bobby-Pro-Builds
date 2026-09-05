@@ -1,7 +1,7 @@
 :root{
-  --brand:#a33a2b;
-  --brand-dark:#5e241d;
-  --brand-soft:#f3e7e1;
+  --brand:#b94b4b;
+  --brand-dark:#315f49;
+  --brand-soft:#f4eee9;
   --ink:#241f1d;
   --muted:#6f625d;
   --paper:#fffdfb;
@@ -20,8 +20,8 @@ a{color:inherit}
 
 .site-header{position:sticky;top:0;z-index:50;background:rgba(255,253,251,.98);border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}
 .nav-wrap{height:78px;display:flex;align-items:center;gap:28px}
-.brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:850;letter-spacing:-.02em}
-.brand img{width:44px;height:44px}
+.brand{display:flex;align-items:center;text-decoration:none}.brand span{display:none}
+.brand img{width:300px;height:auto;max-height:68px}
 .main-nav{display:flex;align-items:center;gap:8px;margin-left:auto}
 .main-nav a{text-decoration:none;font-weight:750;padding:10px 13px;border-radius:8px}
 .main-nav a:hover{background:var(--brand-soft);color:var(--brand-dark)}
@@ -95,8 +95,8 @@ a{color:inherit}
 @media(max-width:820px){
   .container{width:min(calc(100% - 28px),var(--max))}
   .nav-wrap{height:70px;gap:10px}
-  .brand img{width:39px;height:39px}
-  .brand span{font-size:.94rem}
+  .brand img{width:235px;max-height:58px}
+  
   .main-nav{gap:0}
   .main-nav a{padding:8px 7px;font-size:.86rem}
   .quick-menu-toggle{width:42px;height:42px;margin-left:0}
@@ -113,7 +113,7 @@ a{color:inherit}
   .panel{top:82px;right:16px}
 }
 @media(max-width:560px){
-  .brand span{max-width:105px;line-height:1.05}
+  
   .main-nav a{font-size:.78rem;padding:7px 5px}
   .hero-title,.hero h1{font-size:1.85rem}
   .service-list{grid-template-columns:1fr}
