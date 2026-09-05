@@ -19,9 +19,9 @@ a{color:inherit}
 .container{width:min(calc(100% - 40px),var(--max));margin:0 auto}
 
 .site-header{position:sticky;top:0;z-index:50;background:rgba(255,253,251,.98);border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}
-.nav-wrap{height:78px;display:flex;align-items:center;gap:28px}
+.nav-wrap{height:88px;display:flex;align-items:center;gap:28px}
 .brand{display:flex;align-items:center;text-decoration:none}.brand span{display:none}
-.brand img{width:360px;height:auto;max-height:80px}
+.brand img{width:400px;height:auto;max-height:86px}
 .main-nav{display:flex;align-items:center;gap:8px;margin-left:auto}
 .main-nav a{text-decoration:none;font-weight:750;padding:10px 13px;border-radius:8px}
 .main-nav a:hover{background:var(--brand-soft);color:var(--brand-dark)}
