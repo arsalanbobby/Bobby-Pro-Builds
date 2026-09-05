@@ -167,3 +167,60 @@
   .showcase-kitchen{height:260px}
   .kitchen-note{font-size:1.45rem;top:48px}
 }
+
+
+/* 2026-09-05 exact laptop hero proportions from approved reference */
+@media(min-width:901px){
+  .showcase-grid{
+    min-height:610px;
+    grid-template-columns:58% 42%;
+  }
+  .showcase-copy{
+    align-self:start;
+    padding:58px 0 44px;
+  }
+  .showcase-heading{
+    max-width:760px;
+    margin:0 0 34px;
+    line-height:.91;
+    letter-spacing:-.055em;
+  }
+  .showcase-heading span,
+  .showcase-heading strong{
+    font-size:clamp(4rem,5.8vw,5.8rem);
+  }
+  .showcase-intro{
+    max-width:760px;
+    margin:0 0 34px;
+    font-size:1.06rem;
+    line-height:1.52;
+  }
+  .showcase-copy .btn{
+    min-width:220px;
+    min-height:56px;
+    font-size:1.02rem;
+  }
+  .showcase-kitchen{
+    left:42%;
+    right:calc((100vw - min(calc(100vw - 48px),var(--max)))/-2);
+  }
+  .showcase-kitchen:before{
+    background:linear-gradient(
+      90deg,
+      #f6f7ed 0%,
+      rgba(246,247,237,.98) 10%,
+      rgba(238,245,235,.88) 22%,
+      rgba(226,239,230,.58) 36%,
+      rgba(226,239,230,.22) 49%,
+      rgba(226,239,230,0) 63%
+    );
+  }
+  .kitchen-note{
+    top:138px;
+    left:29%;
+    font-size:2rem;
+  }
+  #services{
+    padding-top:10px;
+  }
+}
