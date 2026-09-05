@@ -337,3 +337,112 @@ a{color:inherit}
   }
   .hero-overlay{min-height:0 !important}
 }
+
+
+/* Final responsive rules: same clear composition on phone, tablet and laptop */
+.hero{
+  background-size:contain !important;
+  background-position:center top !important;
+  background-repeat:no-repeat !important;
+  background-color:#f4f1ed !important;
+}
+.hero-overlay{
+  position:relative;
+  width:100%;
+}
+
+/* Laptop / desktop */
+@media (min-width: 901px){
+  .hero{
+    min-height:720px !important;
+    aspect-ratio:4 / 3;
+  }
+  .hero-overlay{
+    min-height:720px !important;
+    height:100% !important;
+  }
+  .hero-content{
+    padding:88px 0 190px !important;
+  }
+  .hero-trust{
+    bottom:58px !important;
+  }
+}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 900px){
+  .hero{
+    min-height:700px !important;
+    aspect-ratio:4 / 3;
+  }
+  .hero-overlay{
+    min-height:700px !important;
+    height:100% !important;
+  }
+  .hero-content{
+    padding:78px 0 190px !important;
+  }
+  .hero-heading span{
+    font-size:2.35rem !important;
+  }
+  .hero-trust{
+    bottom:56px !important;
+  }
+}
+
+/* Phone */
+@media (max-width: 600px){
+  .site-header{position:sticky;top:0}
+  .hero{
+    min-height:820px !important;
+    height:auto !important;
+    aspect-ratio:auto !important;
+    background-size:100% auto !important;
+    background-position:center top !important;
+  }
+  .hero-overlay{
+    min-height:820px !important;
+    height:auto !important;
+    display:block !important;
+  }
+  .hero-content{
+    padding:78px 24px 315px !important;
+  }
+  .hero-heading span{
+    font-size:2rem !important;
+    line-height:1.08 !important;
+  }
+  .hero-copy{
+    max-width:none !important;
+    font-size:1rem !important;
+    line-height:1.45 !important;
+  }
+  .hero-actions{
+    gap:10px !important;
+  }
+  .hero-actions .btn{
+    min-width:0 !important;
+    flex:1 1 145px;
+  }
+  .hero-trust{
+    position:absolute !important;
+    left:20px !important;
+    right:20px !important;
+    bottom:64px !important;
+    transform:none !important;
+    width:auto !important;
+    grid-template-columns:1fr 1fr !important;
+    padding:18px 14px !important;
+  }
+  .hero-trust>div{
+    border-right:0 !important;
+    padding:10px 8px !important;
+  }
+  .hero-trust>div:nth-child(1),
+  .hero-trust>div:nth-child(2){
+    border-bottom:1px solid #ddd !important;
+  }
+  .scroll-down{
+    bottom:10px !important;
+  }
+}
