@@ -6,28 +6,17 @@ description: Bobby Pro Builds provides professional building, renovation and pro
 <section id="home" class="showcase-hero">
   <div class="container showcase-grid">
     <div class="showcase-copy">
-      <p class="showcase-kicker"><span></span>Building Homes & Gardens</p>
       <h1 class="showcase-heading">
         <span>Building a</span>
         <strong>Better Home</strong>
         <span>As You Dream Of</span>
       </h1>
       <p class="showcase-intro">Professional building, renovation and property improvement services with more than 15 years of hands-on experience. Reliable workmanship, clear communication and attention to detail from start to finish.</p>
-      <div class="showcase-actions">
-        <a href="#services" class="btn btn-primary">Our Services »</a>
-      </div>
+      <a href="#services" class="btn btn-primary">Our Services »</a>
     </div>
-
-    <div class="showcase-media" aria-label="Completed Bobby Pro Builds projects">
-      <figure class="project-photo house-photo">
-        <img src="{{ '/assets/images/IMG_4841.jpg' | relative_url }}" alt="Completed exterior house renovation by Bobby Pro Builds">
-      </figure>
-      <p class="photo-note note-house">Transforming<br>Houses</p>
-
-      <figure class="project-photo kitchen-photo">
-        <img src="{{ '/assets/images/2ff575ca-cc75-410e-b5b4-560d87022bf0.jpg' | relative_url }}" alt="Completed modern kitchen by Bobby Pro Builds">
-      </figure>
-      <p class="photo-note note-kitchen">Beautiful<br>Spaces</p>
+    <div class="showcase-kitchen">
+      <img src="{{ '/assets/images/2ff575ca-cc75-410e-b5b4-560d87022bf0.jpg' | relative_url }}" alt="Completed modern kitchen by Bobby Pro Builds">
+      <p class="kitchen-note">Beautiful<br>Spaces</p>
     </div>
   </div>
 </section>
@@ -43,8 +32,8 @@ description: Bobby Pro Builds provides professional building, renovation and pro
         <img src="{{ '/assets/images/IMG_4844.jpg' | relative_url }}" alt="Completed bathroom renovation by Bobby Pro Builds">
         <div class="service-card-body">
           <h3>Renovations &amp; Improvements</h3>
-          <p>Kitchens, bathrooms, tiling, flooring and decorating.</p>
-          <a class="service-link" href="#services" aria-label="View renovation and improvement services"><span>→</span>View Services</a>
+          <p>Kitchens, bathrooms, plastering, decorating, tiling, flooring and general home improvements.</p>
+          <a class="service-link" href="#services" aria-label="View renovation and improvement services">View Services »</a>
         </div>
       </article>
 
@@ -52,8 +41,8 @@ description: Bobby Pro Builds provides professional building, renovation and pro
         <img src="{{ '/assets/images/07ffef1b-db2a-42eb-b80b-a46892b07543.jpg' | relative_url }}" alt="Completed extension and conversion work by Bobby Pro Builds">
         <div class="service-card-body">
           <h3>Extensions &amp; Conversions</h3>
-          <p>Extensions, conservatories and loft conversions.</p>
-          <a class="service-link" href="#services" aria-label="View extension and conversion services"><span>→</span>View Services</a>
+          <p>House extensions, conservatories and loft conversions to create more useful space.</p>
+          <a class="service-link" href="#services" aria-label="View extension and conversion services">View Services »</a>
         </div>
       </article>
 
@@ -61,8 +50,8 @@ description: Bobby Pro Builds provides professional building, renovation and pro
         <img src="{{ '/assets/images/IMG_4842.jpg' | relative_url }}" alt="Completed exterior and landscaping work by Bobby Pro Builds">
         <div class="service-card-body">
           <h3>Exterior &amp; Landscaping</h3>
-          <p>Patios, paving, fencing, garden landscaping and outdoor spaces.</p>
-          <a class="service-link" href="#services" aria-label="View exterior and landscaping services"><span>→</span>View Services</a>
+          <p>Patios, paving, fencing, garden clearance, lawns, garden buildings and outdoor spaces.</p>
+          <a class="service-link" href="#services" aria-label="View exterior and landscaping services">View Services »</a>
         </div>
       </article>
     </div>
