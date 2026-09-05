@@ -15,7 +15,6 @@ description: Bobby Pro Builds provides professional building, renovation and pro
       <p class="showcase-intro">Professional building, renovation and property improvement services with more than 15 years of hands-on experience. Reliable workmanship, clear communication and attention to detail from start to finish.</p>
       <div class="showcase-actions">
         <a href="#services" class="btn btn-primary">Our Services »</a>
-        <button type="button" class="btn showcase-quote js-contact-open">Get a Quote »</button>
       </div>
 
       <div class="showcase-trust" aria-label="Why choose Bobby Pro Builds">
