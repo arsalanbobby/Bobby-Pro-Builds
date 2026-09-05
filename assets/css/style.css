@@ -21,7 +21,7 @@ a{color:inherit}
 .site-header{position:sticky;top:0;z-index:50;background:rgba(255,253,251,.98);border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}
 .nav-wrap{height:78px;display:flex;align-items:center;gap:28px}
 .brand{display:flex;align-items:center;text-decoration:none}.brand span{display:none}
-.brand img{width:330px;height:auto;max-height:74px}
+.brand img{width:360px;height:auto;max-height:80px}
 .main-nav{display:flex;align-items:center;gap:8px;margin-left:auto}
 .main-nav a{text-decoration:none;font-weight:750;padding:10px 13px;border-radius:8px}
 .main-nav a:hover{background:var(--brand-soft);color:var(--brand-dark)}
@@ -95,7 +95,7 @@ a{color:inherit}
 @media(max-width:820px){
   .container{width:min(calc(100% - 28px),var(--max))}
   .nav-wrap{height:70px;gap:10px}
-  .brand img{width:255px;max-height:63px}
+  .brand img{width:275px;max-height:68px}
   
   .main-nav{gap:0}
   .main-nav a{padding:8px 7px;font-size:.86rem}
