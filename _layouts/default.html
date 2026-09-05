@@ -28,7 +28,19 @@
     </div>
   </header>
   <main>{{ content }}</main>
-  <footer class="site-footer"><div class="container footer-inner"><div><strong>Bobby Pro Builds</strong><span>Building • Renovation • Property Improvements</span></div><span>&copy; {{ 'now' | date: "%Y" }} Bobby Pro Builds. All rights reserved.</span></div></footer>
+  <footer class="site-footer">
+    <div class="footer-slogan">Building Better Homes &amp; Creating Better Gardens</div>
+    <div class="footer-lower">
+      <div class="container footer-inner">
+        <span>&copy; {{ 'now' | date: "%Y" }} Bobby Pro Builds. All rights reserved.</span>
+        <div class="social-icons" aria-label="Social media">
+          <span class="social-icon facebook" aria-label="Facebook" title="Facebook">f</span>
+          <span class="social-icon instagram" aria-label="Instagram" title="Instagram">◎</span>
+          <span class="social-icon tiktok" aria-label="TikTok" title="TikTok">♪</span>
+        </div>
+      </div>
+    </div>
+  </footer>
   <script src="{{ '/assets/js/site.js' | relative_url }}"></script>
 </body>
 </html>
