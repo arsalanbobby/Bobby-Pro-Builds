@@ -292,3 +292,40 @@
     left:36%;
   }
 }
+
+
+/* 2026-09-05 correction: keep full-size hero and show pendant lights */
+@media(min-width:901px){
+  .showcase-grid{
+    min-height:610px;
+    grid-template-columns:58% 42%;
+  }
+  .showcase-copy{
+    align-self:start;
+    padding:58px 0 44px;
+  }
+  .showcase-heading{
+    max-width:760px;
+    margin-bottom:34px;
+  }
+  .showcase-heading span,
+  .showcase-heading strong{
+    font-size:clamp(4rem,5.8vw,5.8rem);
+  }
+  .showcase-intro{
+    max-width:760px;
+    margin-bottom:34px;
+    font-size:1.06rem;
+  }
+  .showcase-kitchen{
+    left:42%;
+  }
+  .showcase-kitchen img{
+    object-fit:cover;
+    object-position:center top;
+  }
+  .kitchen-note{
+    top:138px;
+    left:29%;
+  }
+}
