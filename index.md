@@ -16,13 +16,6 @@ description: Bobby Pro Builds provides professional building, renovation and pro
       <div class="showcase-actions">
         <a href="#services" class="btn btn-primary">Our Services »</a>
       </div>
-
-      <div class="showcase-trust" aria-label="Why choose Bobby Pro Builds">
-        <div><span class="trust-icon">★</span><strong>15+ Years</strong><small>of Experience</small></div>
-        <div><span class="trust-icon">✓</span><strong>Fully Insured</strong><small>Peace of mind</small></div>
-        <div><span class="trust-icon">⌖</span><strong>Covering England</strong><small>Residential & commercial</small></div>
-        <div><span class="trust-icon">◉</span><strong>Quality Work</strong><small>You can trust</small></div>
-      </div>
     </div>
 
     <div class="showcase-media" aria-label="Completed Bobby Pro Builds projects">
@@ -37,7 +30,6 @@ description: Bobby Pro Builds provides professional building, renovation and pro
       <p class="photo-note note-kitchen">Beautiful<br>Spaces</p>
     </div>
   </div>
-  <div class="showcase-bottom">Building Better Homes &amp; Creating Better Gardens</div>
 </section>
 
 <section id="services" class="section">
@@ -73,6 +65,13 @@ description: Bobby Pro Builds provides professional building, renovation and pro
           <a class="service-link" href="#services" aria-label="View exterior and landscaping services"><span>→</span>View Services</a>
         </div>
       </article>
+    </div>
+
+    <div class="services-trust" aria-label="Why choose Bobby Pro Builds">
+      <div><span class="trust-icon">★</span><strong>15+ Years</strong><small>of Experience</small></div>
+      <div><span class="trust-icon">✓</span><strong>Fully Insured</strong><small>Peace of mind</small></div>
+      <div><span class="trust-icon">⌖</span><strong>Covering England</strong><small>Residential &amp; commercial</small></div>
+      <div><span class="trust-icon">◉</span><strong>Quality Work</strong><small>You can trust</small></div>
     </div>
   </div>
 </section>
