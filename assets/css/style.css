@@ -507,3 +507,15 @@ a{color:inherit}
  .showcase-copy{padding-bottom:22px}
  #services{padding-top:28px}
 }
+
+
+/* 2026-09-05: blend/spread hero copy into kitchen like approved reference */
+@media(min-width:901px){
+  .showcase-grid{grid-template-columns:58% 42%;min-height:520px}
+  .showcase-copy{padding:42px 0 30px;z-index:3}
+  .showcase-heading{max-width:720px;font-size:clamp(3.15rem,5.15vw,4.9rem);line-height:.94;letter-spacing:-.05em;margin-bottom:24px}
+  .showcase-intro{max-width:720px;font-size:1.04rem;line-height:1.52;margin-bottom:24px}
+  .showcase-kitchen{width:61vw;left:45%;right:auto}
+  .showcase-kitchen:before{background:linear-gradient(90deg,#f7f8ee 0%,rgba(247,248,238,.94) 11%,rgba(235,244,232,.72) 25%,rgba(222,239,229,.34) 43%,rgba(222,239,229,.08) 57%,transparent 70%)}
+  .kitchen-note{left:23%;top:125px}
+}
