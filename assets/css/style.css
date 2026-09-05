@@ -173,3 +173,31 @@ a{color:inherit}
   .footer-inner{align-items:flex-start;flex-direction:column}
   .panel{top:86px;right:14px}
 }
+
+/* Mobile project photos: compact, clear and in the approved order */
+@media(max-width:650px){
+  .hero-projects{
+    min-height:0;
+    padding:28px 0 36px;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+    overflow:visible;
+  }
+  .project-photo{
+    position:relative;
+    inset:auto;
+    width:82%;
+    height:auto;
+    padding:4px;
+  }
+  .project-photo img{
+    width:100%;
+    height:auto;
+    aspect-ratio:4/3;
+    object-fit:cover;
+  }
+  .project-house{align-self:flex-start;margin-left:2%}
+  .project-kitchen{align-self:flex-end;margin-right:2%}
+  .project-note{display:none}
+}
