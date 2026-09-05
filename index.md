@@ -3,40 +3,42 @@ title: Home
 description: Bobby Pro Builds provides professional building, renovation and property improvement services across England.
 ---
 
-<section id="home" class="hero hero-split">
-  <div class="container hero-split-grid">
-    <div class="hero-left">
-      <p class="hero-kicker">BUILDING HOMES &amp; GARDENS</p>
-      <h1 class="hero-heading">
+<section id="home" class="showcase-hero">
+  <div class="container showcase-grid">
+    <div class="showcase-copy">
+      <p class="showcase-kicker"><span></span>Building Homes & Gardens</p>
+      <h1 class="showcase-heading">
         <span>Building a</span>
-        <span class="hero-red">Better Home</span>
-        <span class="hero-small">As You Dream Of</span>
+        <strong>Better Home</strong>
+        <span>As You Dream Of</span>
       </h1>
-      <p class="hero-copy">Professional building, renovation and property improvement services with more than 15 years of hands-on experience. Reliable workmanship, clear communication and attention to detail from start to finish.</p>
-      <div class="hero-actions">
-        <a href="#services" class="btn btn-primary">Our Services <span aria-hidden="true">›</span></a>
-        <button type="button" class="btn btn-outline js-contact-open">Get a Quote <span aria-hidden="true">›</span></button>
+      <p class="showcase-intro">Professional building, renovation and property improvement services with more than 15 years of hands-on experience. Reliable workmanship, clear communication and attention to detail from start to finish.</p>
+      <div class="showcase-actions">
+        <a href="#services" class="btn btn-primary">Our Services »</a>
+        <button type="button" class="btn showcase-quote js-contact-open">Get a Quote »</button>
       </div>
 
-      <div class="hero-trust" aria-label="Why choose Bobby Pro Builds">
-        <div><strong>15+ Years</strong><span>of Experience</span></div>
-        <div><strong>Fully Insured</strong><span>Peace of mind</span></div>
-        <div><strong>Covering England</strong><span>Residential &amp; commercial</span></div>
-        <div><strong>Quality Work</strong><span>You can trust</span></div>
+      <div class="showcase-trust" aria-label="Why choose Bobby Pro Builds">
+        <div><span class="trust-icon">★</span><strong>15+ Years</strong><small>of Experience</small></div>
+        <div><span class="trust-icon">✓</span><strong>Fully Insured</strong><small>Peace of mind</small></div>
+        <div><span class="trust-icon">⌖</span><strong>Covering England</strong><small>Residential & commercial</small></div>
+        <div><span class="trust-icon">◉</span><strong>Quality Work</strong><small>You can trust</small></div>
       </div>
     </div>
 
-    <div class="hero-projects" aria-label="Bobby Pro Builds completed projects">
-      <figure class="project-photo project-house">
-        <img src="{{ '/assets/images/07ffe11b-db2a-42eb-b80b-a46892b07543.jpg' | relative_url }}" alt="Completed Bobby Pro Builds house exterior project">
+    <div class="showcase-media" aria-label="Completed Bobby Pro Builds projects">
+      <figure class="project-photo house-photo">
+        <img src="{{ '/assets/images/house-front.jpg' | relative_url }}" alt="Completed exterior house renovation by Bobby Pro Builds">
       </figure>
-      <div class="project-note note-house">Transforming<br>Houses</div>
-      <figure class="project-photo project-kitchen">
-        <img src="{{ '/assets/images/2ff575ca-cc75-410e-b5b4-560d87022bf0.jpg' | relative_url }}" alt="Completed Bobby Pro Builds kitchen renovation">
+      <p class="photo-note note-house">Transforming<br>Houses</p>
+
+      <figure class="project-photo kitchen-photo">
+        <img src="{{ '/assets/images/07ffef1b-db2a-42eb-b80b-a46892b07543.jpg' | relative_url }}" alt="Completed modern kitchen by Bobby Pro Builds">
       </figure>
-      <div class="project-note note-kitchen">Beautiful<br>Spaces</div>
+      <p class="photo-note note-kitchen">Beautiful<br>Spaces</p>
     </div>
   </div>
+  <div class="showcase-bottom">Building Better Homes &amp; Creating Better Gardens</div>
 </section>
 
 <section id="services" class="section">
