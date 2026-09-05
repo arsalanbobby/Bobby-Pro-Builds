@@ -1,36 +1,40 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const button = document.querySelector(".menu-toggle");
-  const menu = document.querySelector(".site-nav");
+  const toggle = document.querySelector(".quick-menu-toggle");
+  const backdrop = document.querySelector("[data-panel-backdrop]");
+  const menu = document.querySelector("#quick-menu");
+  const gallery = document.querySelector("#gallery-panel");
+  const contact = document.querySelector("#contact-panel");
+  const panels = [menu, gallery, contact].filter(Boolean);
 
-  if (button && menu) {
-    button.addEventListener("click", () => {
-      const open = menu.classList.toggle("open");
-      button.setAttribute("aria-expanded", String(open));
+  const closeAll = () => {
+    panels.forEach(panel => {
+      panel.classList.remove("open");
+      panel.setAttribute("aria-hidden", "true");
     });
-  }
+    if (backdrop) backdrop.classList.remove("open");
+    if (toggle) toggle.setAttribute("aria-expanded", "false");
+    document.body.classList.remove("panel-open");
+  };
 
-  const modal = document.querySelector(".gallery-modal");
-  const modalContent = document.querySelector(".gallery-dialog-content");
-  const close = document.querySelector(".modal-close");
+  const openPanel = (panel) => {
+    closeAll();
+    if (!panel) return;
+    panel.classList.add("open");
+    panel.setAttribute("aria-hidden", "false");
+    if (backdrop) backdrop.classList.add("open");
+    if (toggle && panel === menu) toggle.setAttribute("aria-expanded", "true");
+    document.body.classList.add("panel-open");
+  };
 
-  document.querySelectorAll(".project-image").forEach((item) => {
-    item.addEventListener("click", () => {
-      if (!modal || !modalContent) return;
-      const src = item.getAttribute("data-full");
-      const label = item.getAttribute("data-label") || "Project image";
-      modalContent.innerHTML = src
-        ? '<img src="' + src + '" alt="' + label.replace(/"/g, "&quot;") + '">'
-        : '<div class="placeholder-modal">Project photos coming soon</div>';
-      modal.classList.add("open");
-    });
+  if (toggle) toggle.addEventListener("click", () => {
+    const isOpen = menu && menu.classList.contains("open");
+    isOpen ? closeAll() : openPanel(menu);
   });
 
-  const closeModal = () => modal && modal.classList.remove("open");
-  if (close) close.addEventListener("click", closeModal);
-  if (modal) modal.addEventListener("click", (event) => {
-    if (event.target === modal) closeModal();
-  });
-  document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") closeModal();
-  });
+  document.querySelectorAll(".panel-close").forEach(btn => btn.addEventListener("click", closeAll));
+  document.querySelectorAll(".js-gallery-open").forEach(btn => btn.addEventListener("click", () => openPanel(gallery)));
+  document.querySelectorAll(".js-contact-open").forEach(btn => btn.addEventListener("click", () => openPanel(contact)));
+  if (backdrop) backdrop.addEventListener("click", closeAll);
+  document.addEventListener("keydown", e => { if (e.key === "Escape") closeAll(); });
+  document.querySelectorAll(".main-nav a").forEach(link => link.addEventListener("click", closeAll));
 });
