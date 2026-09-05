@@ -224,3 +224,54 @@
     padding-top:10px;
   }
 }
+
+
+/* 2026-09-05 final reference match: wide desktop/laptop */
+@media(min-width:901px){
+  .showcase-grid{
+    min-height:540px;
+    grid-template-columns:52% 48%;
+  }
+  .showcase-copy{
+    align-self:center;
+    padding:42px 0 36px;
+  }
+  .showcase-heading{
+    max-width:690px;
+    margin:0 0 22px;
+    line-height:.93;
+  }
+  .showcase-heading span,
+  .showcase-heading strong{
+    font-size:clamp(3.65rem,5.05vw,5rem);
+  }
+  .showcase-intro{
+    max-width:670px;
+    margin:0 0 24px;
+    font-size:1.02rem;
+    line-height:1.48;
+  }
+  .showcase-copy .btn{
+    min-width:205px;
+    min-height:52px;
+  }
+  .showcase-kitchen{
+    left:38%;
+  }
+  .showcase-kitchen:before{
+    background:linear-gradient(90deg,
+      #f6f7ed 0%,
+      rgba(246,247,237,.98) 10%,
+      rgba(238,245,235,.91) 22%,
+      rgba(226,239,230,.66) 34%,
+      rgba(226,239,230,.32) 46%,
+      rgba(226,239,230,.08) 56%,
+      rgba(226,239,230,0) 64%);
+  }
+  .kitchen-note{
+    top:155px;
+    left:31%;
+    font-size:2rem;
+  }
+  #services{padding-top:18px}
+}
