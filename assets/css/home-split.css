@@ -280,3 +280,15 @@
 /* Headline colours from approved reference */
 .showcase-heading span{color:#073b3c!important}
 .showcase-heading strong{color:#c51d2c!important}
+
+
+/* Keep the complete kitchen composition visible, including both pendant lights */
+@media(min-width:901px){
+  .showcase-kitchen img{
+    object-fit:cover;
+    object-position:center top;
+  }
+  .showcase-kitchen{
+    left:36%;
+  }
+}
