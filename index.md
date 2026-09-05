@@ -65,12 +65,6 @@ description: Bobby Pro Builds provides professional building, renovation and pro
   </div>
 </section>
 
-<section id="about" class="section section-alt">
-  <div class="container about-grid">
-    <div><p class="eyebrow">About Us</p><h2>15+ Years of Experience</h2><p>Bobby Pro Builds provides dependable building, renovation and property improvement work with practical experience, clear communication and professional workmanship.</p><p>We work carefully and respectfully in and around your home, from the first conversation through to the finished result.</p></div>
-    <div class="about-points"><div><strong>Fully Insured</strong><span>For your peace of mind.</span></div><div><strong>Reliable &amp; Trusted</strong><span>Clear communication throughout.</span></div><div><strong>Quality Workmanship</strong><span>Care and attention to detail.</span></div><div><strong>Covering England</strong><span>Contact us to check availability.</span></div></div>
-  </div>
-</section>
 
 <div class="backdrop" data-backdrop></div>
 <aside id="quick-menu" class="panel small-panel" aria-hidden="true"><button class="panel-close" type="button" aria-label="Close">×</button><button class="panel-option js-gallery-open" type="button"><span>Gallery</span><small>View our work</small></button><button class="panel-option js-contact-open" type="button"><span>Contact details</span><small>Call, WhatsApp or email</small></button></aside>
