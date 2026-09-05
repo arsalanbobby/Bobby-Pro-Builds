@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
   const toggle = document.querySelector(".quick-menu-toggle");
-  const backdrop = document.querySelector("[data-panel-backdrop]");
+  const backdrop = document.querySelector("[data-backdrop]");
   const menu = document.querySelector("#quick-menu");
   const gallery = document.querySelector("#gallery-panel");
   const contact = document.querySelector("#contact-panel");
   const panels = [menu, gallery, contact].filter(Boolean);
 
-  const closeAll = () => {
+  function closeAll() {
     panels.forEach(panel => {
       panel.classList.remove("open");
       panel.setAttribute("aria-hidden", "true");
@@ -14,9 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
     if (backdrop) backdrop.classList.remove("open");
     if (toggle) toggle.setAttribute("aria-expanded", "false");
     document.body.classList.remove("panel-open");
-  };
+  }
 
-  const openPanel = (panel) => {
+  function openPanel(panel) {
     closeAll();
     if (!panel) return;
     panel.classList.add("open");
@@ -24,17 +24,19 @@ document.addEventListener("DOMContentLoaded", () => {
     if (backdrop) backdrop.classList.add("open");
     if (toggle && panel === menu) toggle.setAttribute("aria-expanded", "true");
     document.body.classList.add("panel-open");
-  };
+  }
 
-  if (toggle) toggle.addEventListener("click", () => {
-    const isOpen = menu && menu.classList.contains("open");
-    isOpen ? closeAll() : openPanel(menu);
-  });
+  if (toggle) {
+    toggle.addEventListener("click", () => {
+      if (menu && menu.classList.contains("open")) closeAll();
+      else openPanel(menu);
+    });
+  }
 
   document.querySelectorAll(".panel-close").forEach(btn => btn.addEventListener("click", closeAll));
   document.querySelectorAll(".js-gallery-open").forEach(btn => btn.addEventListener("click", () => openPanel(gallery)));
   document.querySelectorAll(".js-contact-open").forEach(btn => btn.addEventListener("click", () => openPanel(contact)));
   if (backdrop) backdrop.addEventListener("click", closeAll);
-  document.addEventListener("keydown", e => { if (e.key === "Escape") closeAll(); });
+  document.addEventListener("keydown", event => { if (event.key === "Escape") closeAll(); });
   document.querySelectorAll(".main-nav a").forEach(link => link.addEventListener("click", closeAll));
 });
