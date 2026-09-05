@@ -28,7 +28,7 @@ description: Bobby Pro Builds provides professional building, renovation and pro
 
     <div class="showcase-media" aria-label="Completed Bobby Pro Builds projects">
       <figure class="project-photo house-photo">
-        <img src="{{ '/assets/images/07ffef1b-db2a-42eb-b80b-a46892b07543.jpg' | relative_url }}" alt="Completed exterior house renovation by Bobby Pro Builds">
+        <img src="{{ '/assets/images/IMG_4841.jpg' | relative_url }}" alt="Completed exterior house renovation by Bobby Pro Builds">
       </figure>
       <p class="photo-note note-house">Transforming<br>Houses</p>
 
