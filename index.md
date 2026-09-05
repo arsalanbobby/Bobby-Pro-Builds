@@ -28,12 +28,12 @@ description: Bobby Pro Builds provides professional building, renovation and pro
 
     <div class="showcase-media" aria-label="Completed Bobby Pro Builds projects">
       <figure class="project-photo house-photo">
-        <img src="{{ '/assets/images/house-front.jpg' | relative_url }}" alt="Completed exterior house renovation by Bobby Pro Builds">
+        <img src="{{ '/assets/images/07ffef1b-db2a-42eb-b80b-a46892b07543.jpg' | relative_url }}" alt="Completed exterior house renovation by Bobby Pro Builds">
       </figure>
       <p class="photo-note note-house">Transforming<br>Houses</p>
 
       <figure class="project-photo kitchen-photo">
-        <img src="{{ '/assets/images/07ffef1b-db2a-42eb-b80b-a46892b07543.jpg' | relative_url }}" alt="Completed modern kitchen by Bobby Pro Builds">
+        <img src="{{ '/assets/images/2ff575ca-cc75-410e-b5b4-560d87022bf0.jpg' | relative_url }}" alt="Completed modern kitchen by Bobby Pro Builds">
       </figure>
       <p class="photo-note note-kitchen">Beautiful<br>Spaces</p>
     </div>
