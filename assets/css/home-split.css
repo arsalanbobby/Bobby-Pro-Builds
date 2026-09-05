@@ -440,3 +440,22 @@
     padding-top:18px;
   }
 }
+
+
+/* Footer social icons: keep Facebook, Instagram and TikTok side-by-side */
+.site-footer .social-links,
+.footer-social,
+.social-links{
+  display:flex !important;
+  flex-direction:row !important;
+  align-items:center !important;
+  justify-content:flex-end !important;
+  gap:16px !important;
+  flex-wrap:nowrap !important;
+}
+.site-footer .social-links a,
+.footer-social a,
+.social-links a{
+  display:inline-flex !important;
+  margin:0 !important;
+}
