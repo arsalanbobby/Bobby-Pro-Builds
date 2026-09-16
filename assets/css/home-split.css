@@ -150,3 +150,11 @@
 }
 
 @media(min-width:901px){.showcase-kitchen img{object-fit:cover;object-position:center top}}
+
+
+/* Keep every service photograph separate */
+@media(min-width:901px){
+  .project-image{height:90px}
+  .project-extension{top:65px}
+  .project-renovation{top:160px}
+}
