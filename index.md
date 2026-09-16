@@ -268,9 +268,9 @@ permalink: /
           <button class="nav-button" type="button" aria-expanded="false">About</button>
           <div class="dropdown about-dropdown">
             <p class="dropdown-label">ABOUT US</p>
-            <h2>Helping people improve their homes for over 15 years</h2>
-            <p>At Bobby Pro Builds, we know how important your home is. We listen to what you want, keep you updated and take care with every part of the job.</p>
-            <p>Whether you are planning a small improvement or a full renovation, we are here to help turn your ideas into a home you will love.</p>
+            <h2>Let’s create a home you will love</h2>
+            <p>Your home should feel right for you. For over 15 years, Bobby Pro Builds has been helping people turn their ideas into comfortable, practical spaces they can enjoy every day.</p>
+            <p>We take time to listen, talk you through the work and treat your home with care. From a fresh new bathroom to a full renovation, we bring reliable workmanship and a personal touch to every job.</p>
           </div>
         </div>
         <div class="nav-item">
