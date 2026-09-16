@@ -60,6 +60,27 @@ permalink: /
       .services-heading{font-size:22px}
       .service-photo{max-width:330px;margin:0 auto}
     }
+  
+    @media(min-width:761px){
+      html,body{height:100%;overflow:hidden}
+      .header-inner{min-height:74px}
+      .blank-page{height:calc(100vh - 75px);min-height:0;display:grid;grid-template-rows:250px minmax(0,1fr);overflow:hidden}
+      .hero{width:min(1120px,calc(100% - 40px));height:250px;min-height:0;gap:8px}
+      .hero-copy{padding:12px 0}
+      .hero-title{margin-bottom:20px}
+      .hero-photo{width:380px;height:240px}
+      .services-gallery{height:100%;min-height:0;padding-top:0}
+      .services-kicker{left:20px;top:2px;font-size:17px}
+      .services-heading{left:390px;top:2px;font-size:20px}
+      .service-photo img{width:100%;height:100%;object-fit:contain}
+      .service-garden{left:20px;top:36px;width:190px;height:130px}
+      .garden-text{left:245px;top:42px;width:375px}
+      .service-house{right:20px;top:38px;width:190px;height:130px}
+      .extension-text{left:300px;top:125px;width:270px}
+      .service-bathroom{left:480px;top:145px;width:170px;height:115px}
+      .renovation-text{left:25px;top:185px;width:390px}
+      .service-text{font-size:13px;line-height:1.35}
+    }
   </style>
 </head>
 <body>
