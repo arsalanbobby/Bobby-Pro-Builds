@@ -127,19 +127,29 @@ permalink: /
     .contact-options small{margin-top:2px;color:#5d5a50;font-size:12px}
     @media(max-width:760px){.contact-dropdown{width:auto}}
   
-    /* Trust statements above the green footer */
-    .trust-strip{height:30px;background:#f0efdc;color:#a73534}
-    .trust-row{width:min(1120px,calc(100% - 40px));height:30px;margin:0 auto;display:flex;align-items:center;justify-content:space-around;gap:18px;white-space:nowrap}
-    .trust-row strong{font-family:Georgia,"Times New Roman",serif;font-size:12px}
-    .site-footer{height:32px;background:#173f34;color:#fff}
-    .footer-row{width:min(1120px,calc(100% - 40px));height:32px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:18px;white-space:nowrap}
+    /* Trust statements and business footer */
+    .trust-strip{height:62px;background:#f0efdc;color:#202020}
+    .trust-row{width:min(1120px,calc(100% - 40px));height:62px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);align-items:center;gap:34px}
+    .trust-item{font-family:Georgia,"Times New Roman",serif}
+    .trust-item strong{display:block;color:#2f8a51;font-size:12px;line-height:1.2}
+    .trust-item span{display:block;margin-top:4px;color:#202020;font-size:12px;font-weight:700;line-height:1.2}
+    .site-footer{height:98px;background:#173f34;color:#fff}
+    .footer-row{position:relative;width:min(1120px,calc(100% - 40px));height:98px;margin:0 auto;padding:17px 0 12px}
+    .footer-details{display:grid;grid-template-columns:1fr 1.35fr;gap:70px;padding-bottom:13px;border-bottom:1px solid rgba(255,255,255,.14)}
+    .footer-details strong{display:block;font-family:Georgia,"Times New Roman",serif;font-size:12px}
+    .footer-details span{display:block;margin-top:7px;color:#e6eadf;font-size:11px}
+    .footer-bottom{display:flex;align-items:center;gap:14px;padding-top:8px}
     .copyright{font-size:10px;color:#e6eadf}
-    .footer-socials{display:flex;align-items:center;gap:9px}
-    .footer-socials span{display:grid;place-items:center;width:20px;height:20px;border:1px solid rgba(255,255,255,.65);border-radius:50%;font-weight:700;font-size:11px}
-    @media(min-width:761px){.blank-page{height:calc(100vh - 137px)}}
+    .footer-socials{display:flex;align-items:center;gap:7px}
+    .footer-socials span{display:grid;place-items:center;width:18px;height:18px;border:1px solid rgba(255,255,255,.65);border-radius:50%;font-weight:700;font-size:10px}
+    .whatsapp-button{margin-left:auto;padding:7px 15px;border-radius:999px;background:#22c55e;color:#fff;text-decoration:none;font-size:11px;font-weight:700}
+    @media(min-width:761px){.blank-page{height:calc(100vh - 235px)}}
     @media(max-width:760px){
       .trust-strip,.site-footer{height:auto}
-      .trust-row,.footer-row{height:auto;min-height:32px;padding:8px 0;flex-wrap:wrap;white-space:normal}
+      .trust-row{height:auto;padding:15px 0;grid-template-columns:repeat(2,1fr);gap:16px}
+      .footer-row{height:auto;padding:17px 0 12px}
+      .footer-details{grid-template-columns:1fr;gap:14px}
+      .footer-bottom{flex-wrap:wrap}
     }
   </style>
 </head>
@@ -220,19 +230,32 @@ permalink: /
   </main>
   <section class="trust-strip" aria-label="Why choose Bobby Pro Builds">
     <div class="trust-row">
-      <strong>15+ Years’ Experience</strong>
-      <strong>Fully Insured</strong>
-      <strong>Covering England</strong>
-      <strong>Quality Work</strong>
+      <div class="trust-item"><strong>15+ Years</strong><span>Experience</span></div>
+      <div class="trust-item"><strong>Reliable &amp; Trusted</strong><span>Professional service</span></div>
+      <div class="trust-item"><strong>Fully Insured</strong><span>For your peace of mind</span></div>
+      <div class="trust-item"><strong>Covering England</strong><span>Quality building work</span></div>
     </div>
   </section>
   <footer class="site-footer">
     <div class="footer-row">
-      <span class="copyright">&copy; 2026 Bobby Pro Builds</span>
-      <div class="footer-socials" aria-label="Social media">
-        <span aria-label="Facebook">f</span>
-        <span aria-label="Instagram">◎</span>
-        <span aria-label="TikTok">♪</span>
+      <div class="footer-details">
+        <div>
+          <strong>Bobby Pro Builds</strong>
+          <span>Building Homes &amp; Gardens</span>
+        </div>
+        <div>
+          <strong>Building &amp; renovation services</strong>
+          <span>Renovations • Extensions • Conversions • Landscaping</span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="copyright">&copy; 2026 Bobby Pro Builds. All rights reserved.</span>
+        <div class="footer-socials" aria-label="Social media">
+          <span aria-label="Facebook">f</span>
+          <span aria-label="Instagram">◎</span>
+          <span aria-label="TikTok">♪</span>
+        </div>
+        <a class="whatsapp-button" href="https://wa.me/447344304402" target="_blank" rel="noopener">WhatsApp</a>
       </div>
     </div>
   </footer>
