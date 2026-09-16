@@ -135,7 +135,8 @@
   .service-photo-card{
     min-height:0;
     display:grid;
-    grid-template-rows:minmax(0,1fr) auto;
+    grid-template-rows:clamp(96px,15vh,112px) auto;
+    align-self:start;
     overflow:hidden;padding:0;
     border-radius:8px;
     background:#fff;
