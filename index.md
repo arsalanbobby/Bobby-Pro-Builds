@@ -243,6 +243,14 @@ permalink: /
     @media(min-width:761px){
       .hero-copy{transform:translateY(-20px)}
     }
+
+    /* About dropdown */
+    .about-dropdown{width:390px;padding:22px}
+    .about-dropdown .dropdown-label{margin:0 0 8px;color:#a73534;font-size:12px;font-weight:700;letter-spacing:.12em}
+    .about-dropdown h2{margin:0 0 12px;color:#173f34;font-size:21px;line-height:1.25}
+    .about-dropdown p:not(.dropdown-label){margin:0 0 11px;color:#333;font-family:Georgia,"Times New Roman",serif;font-size:14px;line-height:1.5}
+    .about-dropdown p:last-child{margin-bottom:0}
+    @media(max-width:760px){.about-dropdown{width:auto}}
   </style>
 </head>
 <body>
@@ -258,7 +266,12 @@ permalink: /
         </div>
         <div class="nav-item">
           <button class="nav-button" type="button" aria-expanded="false">About</button>
-          <div class="dropdown"><h2>About</h2></div>
+          <div class="dropdown about-dropdown">
+            <p class="dropdown-label">ABOUT US</p>
+            <h2>Our story started over 15 years ago</h2>
+            <p>Bobby Pro Builds provides professional building, renovation and property improvement services. We take pride in reliable workmanship, clear communication and careful attention to every detail.</p>
+            <p>From smaller home improvements to larger renovation projects, our aim is to create quality spaces built around your needs.</p>
+          </div>
         </div>
         <div class="nav-item">
           <button class="nav-button" type="button" aria-expanded="false">Contact &amp; Get a Quote</button>
