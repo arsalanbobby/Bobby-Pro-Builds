@@ -270,7 +270,7 @@ permalink: /
             <p class="dropdown-label">ABOUT US</p>
             <h2>Let’s create a home you will love</h2>
             <p>Your home should feel right for you. For over 15 years, Bobby Pro Builds has been helping people turn their ideas into comfortable, practical spaces they can enjoy every day.</p>
-            <p>We take time to listen, talk you through the work and treat your home with care. We believe quality work makes all the difference, so we pay attention to the details and take pride in the finish. From a fresh new bathroom to a full renovation, we bring reliable workmanship and a personal touch to every job.</p>
+            <p>We take time to listen, talk you through the work and treat your home with care. We believe quality work makes all the difference, so we pay attention to the details and take pride in the finish. From a fresh new kitchen or bathroom to a conservatory or full renovation, we bring reliable workmanship and a personal touch to every job.</p>
           </div>
         </div>
         <div class="nav-item">
