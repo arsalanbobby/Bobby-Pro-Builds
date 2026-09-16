@@ -25,12 +25,12 @@ permalink: /
     .blank-page{min-height:calc(100vh - 83px);background:#fff}
     .hero{width:min(1120px,calc(100% - 40px));min-height:380px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
     .hero-copy{padding:42px 0}
-    .hero-title{margin:0 0 30px;font-family:Arial,sans-serif;font-size:clamp(2.3rem,4vw,3.7rem);line-height:.96;letter-spacing:-.05em}
-    .hero-title span{display:block;color:#a73534}
-    .hero-title strong{display:block;color:#173f34}
+    .hero-title{margin:0 0 30px;font-family:Arial,sans-serif;font-size:clamp(2.15rem,3.3vw,3.15rem);line-height:.96;letter-spacing:-.05em}
+    .hero-title span{display:block;color:#a73534;white-space:nowrap}
+    .hero-title strong{display:block;color:#173f34;white-space:nowrap}
     .hero-intro{max-width:540px;margin:0;color:#2d2d2d;font-family:Georgia,"Times New Roman",serif;font-size:1rem;line-height:1.55}
-    .hero-photo{position:relative;width:310px;height:310px;max-width:100%;justify-self:center;overflow:hidden;-webkit-mask-image:radial-gradient(ellipse at center,#000 24%,rgba(0,0,0,.82) 43%,rgba(0,0,0,.42) 61%,rgba(0,0,0,.12) 76%,transparent 91%);mask-image:radial-gradient(ellipse at center,#000 24%,rgba(0,0,0,.82) 43%,rgba(0,0,0,.42) 61%,rgba(0,0,0,.12) 76%,transparent 91%)}
-    .hero-photo::after{content:"";position:absolute;inset:0;pointer-events:none;box-shadow:inset 0 0 34px 24px rgba(255,255,255,.72)}
+    .hero-photo{position:relative;width:340px;height:340px;max-width:100%;justify-self:center;overflow:hidden;-webkit-mask-image:radial-gradient(ellipse at center,#000 64%,rgba(0,0,0,.88) 72%,rgba(0,0,0,.5) 84%,rgba(0,0,0,.16) 94%,transparent 100%);mask-image:radial-gradient(ellipse at center,#000 64%,rgba(0,0,0,.88) 72%,rgba(0,0,0,.5) 84%,rgba(0,0,0,.16) 94%,transparent 100%)}
+    .hero-photo::after{content:"";position:absolute;inset:0;pointer-events:none;box-shadow:inset 0 0 14px 8px rgba(255,255,255,.32)}
     .hero-photo img{display:block;width:100%;height:100%;object-fit:contain;object-position:center}
     @media(max-width:760px){
       .header-inner{min-height:74px;gap:14px}
@@ -40,7 +40,7 @@ permalink: /
       .dropdown{position:fixed;top:74px;left:20px;right:20px;width:auto}
       .hero{grid-template-columns:1fr;gap:6px;padding:30px 0}
       .hero-copy{padding:10px 0}
-      .hero-title{font-size:2.25rem;margin-bottom:22px}
+      .hero-title{font-size:2rem;margin-bottom:22px}
       .hero-photo{width:250px;height:250px}
     }
   </style>
