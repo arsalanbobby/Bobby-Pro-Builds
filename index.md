@@ -100,6 +100,11 @@ permalink: /
       .services-row .service-photo{width:250px;height:160px}
       .service-item p{max-width:330px}
     }
+  
+    /* Stack the service headings with clear spacing */
+    .services-header-row{display:flex;flex-direction:column;align-items:flex-start;gap:8px;padding:0 20px 7px}
+    .services-header-row .services-heading{order:1}
+    .services-header-row .services-kicker{order:2}
   </style>
 </head>
 <body>
