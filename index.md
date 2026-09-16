@@ -28,7 +28,7 @@ description: Bobby Pro Builds provides professional building, renovation and pro
       <p class="project-copy project-garden-copy">Patios, paving, fencing, garden clearance, lawns, garden buildings and outdoor spaces.</p>
 
       <p class="project-copy project-extension-copy">House extensions, conversions and loft conversions to create more useful space.</p>
-      <img class="project-image project-extension" src="{{ '/assets/images/07ffef1b-db2a-42eb-b80b-a46892b07543.jpg' | relative_url }}" alt="Completed extension and conversion project">
+      <img class="project-image project-extension" src="{{ '/assets/images/IMG_4841.jpg' | relative_url }}" alt="Completed extension and conversion project">
 
       <p class="project-copy project-renovation-copy">Renovations &amp; improvements<br><span>Kitchen, bathrooms, plastering, decorating, flooring and general home improvements.</span></p>
       <img class="project-image project-renovation" src="{{ '/assets/images/IMG_4844.jpg' | relative_url }}" alt="Completed bathroom renovation">
