@@ -154,21 +154,21 @@ permalink: /
 
     /* Larger website typography and service photos */
     body{font-size:16px}
-    .nav-button{font-size:17px}
+    .nav-button{font-size:16px}
     .dropdown h2{font-size:20px}
-    .hero-title{font-size:30px}
-    .hero-intro{font-size:17px;line-height:1.55}
-    .services-header-row .services-kicker{font-size:20px}
-    .services-header-row .services-heading{font-size:24px}
+    .hero-title{font-size:28px}
+    .hero-intro{font-size:16px;line-height:1.55}
+    .services-header-row .services-kicker{font-size:19px}
+    .services-header-row .services-heading{font-size:22px}
     .services-row .service-photo{width:270px;height:155px}
-    .service-item p{max-width:320px;font-size:15px;line-height:1.4}
-    .trust-item strong{font-size:14px}
-    .trust-item span{font-size:13px}
-    .footer-details strong{font-size:14px}
-    .footer-details span{font-size:12px}
+    .service-item p{max-width:320px;font-size:14px;line-height:1.4}
+    .trust-item strong{font-size:13px}
+    .trust-item span{font-size:12px}
+    .footer-details strong{font-size:13px}
+    .footer-details span{font-size:11px}
     .copyright{font-size:11px}
     .whatsapp-button{font-size:12px}
-    .contact-options strong{font-size:15px}
+    .contact-options strong{font-size:14px}
     .contact-options small{font-size:13px}
     @media(min-width:761px){
       .blank-page{grid-template-rows:210px minmax(0,1fr)}
