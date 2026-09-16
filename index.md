@@ -13,7 +13,7 @@ permalink: /
     .site-header{position:relative;z-index:10;background:#fff;border-bottom:1px solid #ece7e3}
     .header-inner{width:min(1120px,calc(100% - 40px));min-height:82px;margin:0 auto;display:flex;align-items:center;gap:28px}
     .logo{display:block;margin-right:auto}
-    .logo img{display:block;width:310px;max-width:46vw;height:auto}
+    .logo img{display:block;width:335px;max-width:48vw;height:auto}
     .navigation{display:flex;align-items:center;gap:24px}
     .nav-item{position:relative}
     .nav-button{border:0;background:transparent;padding:12px 4px;color:#202020;font:inherit;font-weight:700;cursor:pointer}
@@ -25,7 +25,7 @@ permalink: /
     .blank-page{min-height:calc(100vh - 83px);background:#fff}
     @media(max-width:760px){
       .header-inner{min-height:74px;gap:14px}
-      .logo img{width:220px;max-width:49vw}
+      .logo img{width:235px;max-width:51vw}
       .navigation{gap:8px}
       .nav-button{font-size:.78rem}
       .dropdown{position:fixed;top:74px;left:20px;right:20px;width:auto}
