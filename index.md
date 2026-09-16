@@ -23,12 +23,24 @@ permalink: /
     .nav-item.open .dropdown{opacity:1;visibility:visible;transform:none}
     .dropdown h2{margin:0;color:#173f34;font-family:Georgia,serif;font-size:1.15rem}
     .blank-page{min-height:calc(100vh - 83px);background:#fff}
+    .hero{width:min(1120px,calc(100% - 40px));min-height:430px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center}
+    .hero-copy{padding:42px 0}
+    .hero-title{margin:0 0 30px;font-family:Arial,sans-serif;font-size:clamp(2.8rem,5vw,4.8rem);line-height:.96;letter-spacing:-.05em}
+    .hero-title span{display:block;color:#a73534}
+    .hero-title strong{display:block;color:#173f34}
+    .hero-intro{max-width:540px;margin:0;color:#2d2d2d;font-family:Georgia,"Times New Roman",serif;font-size:1rem;line-height:1.55}
+    .hero-photo{width:100%;height:340px;overflow:hidden;-webkit-mask-image:radial-gradient(ellipse at center,#000 38%,rgba(0,0,0,.9) 52%,rgba(0,0,0,.55) 68%,rgba(0,0,0,.18) 84%,transparent 100%);mask-image:radial-gradient(ellipse at center,#000 38%,rgba(0,0,0,.9) 52%,rgba(0,0,0,.55) 68%,rgba(0,0,0,.18) 84%,transparent 100%)}
+    .hero-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center top}
     @media(max-width:760px){
       .header-inner{min-height:74px;gap:14px}
       .logo img{width:235px;max-width:51vw}
       .navigation{gap:8px}
       .nav-button{font-size:.78rem}
       .dropdown{position:fixed;top:74px;left:20px;right:20px;width:auto}
+      .hero{grid-template-columns:1fr;gap:6px;padding:30px 0}
+      .hero-copy{padding:10px 0}
+      .hero-title{font-size:2.7rem;margin-bottom:22px}
+      .hero-photo{height:270px}
     }
   </style>
 </head>
@@ -54,7 +66,20 @@ permalink: /
       </nav>
     </div>
   </header>
-  <main class="blank-page"></main>
+  <main class="blank-page">
+    <section class="hero">
+      <div class="hero-copy">
+        <h1 class="hero-title">
+          <span>Building a Better Home</span>
+          <strong>As You Dream Of</strong>
+        </h1>
+        <p class="hero-intro">Professional building, renovation and property improvement services with more than 15 years of hands-on experience. Reliable workmanship, clear communication and attention to detail from start to finish.</p>
+      </div>
+      <div class="hero-photo">
+        <img src="{{ '/assets/images/IMG_4849.jpg' | relative_url }}" alt="Completed modern kitchen by Bobby Pro Builds">
+      </div>
+    </section>
+  </main>
   <script>
     const items = document.querySelectorAll('.nav-item');
     const closeMenus = () => items.forEach(item => {
