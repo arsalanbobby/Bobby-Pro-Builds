@@ -112,3 +112,23 @@
   .project-image{max-height:260px;object-fit:cover}
   .services-trust{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:28px 0}
 }
+
+
+/* Final spacing correction for the supplied staggered design */
+@media(min-width:901px){
+  #services.reference-services h2{
+    margin:0!important;
+    font-size:1.02rem!important;
+    line-height:1.2!important;
+    letter-spacing:0!important;
+  }
+  .project-showcase{height:245px;margin-top:4px}
+  .project-image{width:140px;height:96px}
+  .project-garden{left:18px;top:25px}
+  .project-garden-copy{left:185px;top:15px;width:360px}
+  .project-extension-copy{left:315px;top:78px;width:225px}
+  .project-extension{left:565px;top:66px}
+  .project-renovation-copy{left:24px;top:166px;width:420px}
+  .project-renovation{left:535px;top:146px}
+  .services-trust{bottom:4px}
+}
