@@ -29,9 +29,9 @@ permalink: /
     .hero-title span{display:block;color:#a73534}
     .hero-title strong{display:block;color:#173f34}
     .hero-intro{max-width:540px;margin:0;color:#2d2d2d;font-family:Georgia,"Times New Roman",serif;font-size:1rem;line-height:1.55}
-    .hero-photo{position:relative;width:88%;height:280px;justify-self:center;overflow:hidden;-webkit-mask-image:radial-gradient(ellipse at center,#000 24%,rgba(0,0,0,.82) 43%,rgba(0,0,0,.42) 61%,rgba(0,0,0,.12) 76%,transparent 91%);mask-image:radial-gradient(ellipse at center,#000 24%,rgba(0,0,0,.82) 43%,rgba(0,0,0,.42) 61%,rgba(0,0,0,.12) 76%,transparent 91%)}
+    .hero-photo{position:relative;width:310px;height:310px;max-width:100%;justify-self:center;overflow:hidden;-webkit-mask-image:radial-gradient(ellipse at center,#000 24%,rgba(0,0,0,.82) 43%,rgba(0,0,0,.42) 61%,rgba(0,0,0,.12) 76%,transparent 91%);mask-image:radial-gradient(ellipse at center,#000 24%,rgba(0,0,0,.82) 43%,rgba(0,0,0,.42) 61%,rgba(0,0,0,.12) 76%,transparent 91%)}
     .hero-photo::after{content:"";position:absolute;inset:0;pointer-events:none;box-shadow:inset 0 0 34px 24px rgba(255,255,255,.72)}
-    .hero-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center top}
+    .hero-photo img{display:block;width:100%;height:100%;object-fit:contain;object-position:center}
     @media(max-width:760px){
       .header-inner{min-height:74px;gap:14px}
       .logo img{width:235px;max-width:51vw}
@@ -41,7 +41,7 @@ permalink: /
       .hero{grid-template-columns:1fr;gap:6px;padding:30px 0}
       .hero-copy{padding:10px 0}
       .hero-title{font-size:2.25rem;margin-bottom:22px}
-      .hero-photo{width:94%;height:230px}
+      .hero-photo{width:250px;height:250px}
     }
   </style>
 </head>
