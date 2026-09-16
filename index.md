@@ -105,6 +105,17 @@ permalink: /
     .services-header-row{display:flex;flex-direction:column;align-items:flex-start;gap:8px;padding:0 20px 7px}
     .services-header-row .services-heading{order:1}
     .services-header-row .services-kicker{order:2}
+  
+    /* Click-to-open Services & Gallery */
+    .services-header-row .services-toggle{order:2;border:0;background:transparent;padding:0;color:#a73534;font-family:Georgia,"Times New Roman",serif;font-size:17px;font-weight:700;cursor:pointer}
+    .services-toggle span{display:inline-block;margin-left:6px;transition:transform .18s ease}
+    .services-gallery.open .services-toggle span{transform:rotate(180deg)}
+    .services-dropdown{position:absolute;left:0;right:0;top:58px;opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .18s ease,transform .18s ease}
+    .services-gallery.open .services-dropdown{opacity:1;visibility:visible;transform:none}
+    @media(max-width:760px){
+      .services-dropdown{position:static;display:none;opacity:1;visibility:visible;transform:none;margin-top:14px}
+      .services-gallery.open .services-dropdown{display:block}
+    }
   </style>
 </head>
 <body>
@@ -145,10 +156,11 @@ permalink: /
 
     <section class="services-gallery" aria-labelledby="services-heading">
       <div class="services-header-row">
-        <p class="services-kicker">Our Services &amp; Gallery</p>
         <h2 id="services-heading" class="services-heading">Building &amp; Renovation</h2>
+        <button class="services-toggle" type="button" aria-expanded="false" aria-controls="services-dropdown">Our Services &amp; Gallery <span>▾</span></button>
       </div>
 
+      <div id="services-dropdown" class="services-dropdown">
       <div class="services-row">
         <article class="service-item">
           <div class="service-photo">
@@ -171,6 +183,7 @@ permalink: /
           <p><strong>Renovations &amp; improvements</strong><br>Kitchen, bathrooms, plastering, decorating, flooring and general home improvements.</p>
         </article>
       </div>
+      </div>
     </section>
   </main>
   <script>
@@ -192,6 +205,16 @@ permalink: /
       });
     });
     document.addEventListener('click', closeMenus);
+
+    const servicesSection = document.querySelector('.services-gallery');
+    const servicesToggle = document.querySelector('.services-toggle');
+    if(servicesSection && servicesToggle){
+      servicesToggle.addEventListener('click', () => {
+        const opening = !servicesSection.classList.contains('open');
+        servicesSection.classList.toggle('open', opening);
+        servicesToggle.setAttribute('aria-expanded', String(opening));
+      });
+    }
     document.addEventListener('keydown', event => {
       if(event.key === 'Escape') closeMenus();
     });
