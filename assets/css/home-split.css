@@ -158,3 +158,30 @@
   .project-extension{top:65px}
   .project-renovation{top:160px}
 }
+
+
+/* Soft-edged kitchen photograph and click dropdown */
+.showcase-kitchen{
+  -webkit-mask-image:radial-gradient(ellipse at center,#000 32%,rgba(0,0,0,.92) 47%,rgba(0,0,0,.62) 64%,rgba(0,0,0,.25) 80%,transparent 100%)!important;
+  mask-image:radial-gradient(ellipse at center,#000 32%,rgba(0,0,0,.92) 47%,rgba(0,0,0,.62) 64%,rgba(0,0,0,.25) 80%,transparent 100%)!important;
+}
+.nav-dropdown{position:relative}
+.nav-dropdown-toggle{
+  border:0;background:transparent;color:var(--ink);font:inherit;font-weight:700;
+  padding:8px 4px;cursor:pointer
+}
+.nav-dropdown-toggle:hover,.nav-dropdown-toggle[aria-expanded="true"]{color:var(--red)}
+.nav-dropdown-menu{
+  position:absolute;top:calc(100% + 8px);left:50%;z-index:100;
+  width:210px;padding:8px;background:#fff;border:1px solid #e7ded7;
+  border-radius:10px;box-shadow:0 14px 32px rgba(25,20,16,.16);
+  opacity:0;visibility:hidden;transform:translate(-50%,-5px);transition:.16s ease
+}
+.nav-dropdown.open .nav-dropdown-menu{opacity:1;visibility:visible;transform:translate(-50%,0)}
+.nav-dropdown-menu a,.nav-dropdown-menu button{
+  display:block;width:100%;border:0;background:transparent;padding:11px 12px;
+  color:#242424;text-align:left;text-decoration:none;font:inherit;font-weight:700;
+  border-radius:7px;cursor:pointer
+}
+.nav-dropdown-menu a:hover,.nav-dropdown-menu button:hover{background:#f7f4ee;color:var(--red)}
+@media(max-width:900px){.nav-dropdown{display:none}}
