@@ -187,3 +187,23 @@
   }
   .kitchen-note{left:67%;top:66px}
 }
+
+
+/* Spread the hero writing across the composition */
+@media(min-width:901px){
+  .showcase-copy{width:72%;padding:8px 48px 8px 0}
+  .showcase-heading{max-width:760px;margin-bottom:11px}
+  .showcase-heading span,.showcase-heading strong{font-size:3.25rem;line-height:.9}
+  .showcase-intro{max-width:810px;font-size:.84rem;line-height:1.3}
+  .showcase-kitchen{left:38%}
+  .showcase-kitchen:before{
+    background:linear-gradient(90deg,
+      #f7f8ee 0%,
+      rgba(247,248,238,.98) 18%,
+      rgba(238,245,235,.82) 36%,
+      rgba(221,239,228,.46) 52%,
+      rgba(221,239,228,.10) 67%,
+      transparent 78%);
+  }
+  .kitchen-note{left:72%}
+}
