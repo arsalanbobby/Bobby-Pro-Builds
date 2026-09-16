@@ -226,6 +226,18 @@ permalink: /
     @media(min-width:761px){
       .services-gallery{margin-top:-24px}
     }
+
+    /* Keep the three current service photos visible on the homepage */
+    .gallery-note{
+      margin:0 20px 18px;
+      padding:12px 15px;
+      color:#173f34;
+      background:rgba(255,255,255,.42);
+      border:1px solid rgba(23,63,52,.14);
+      border-radius:8px;
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:14px;
+    }
   </style>
 </head>
 <body>
@@ -282,7 +294,10 @@ permalink: /
       </div>
 
       <div class="services-dropdown">
-        <div class="services-row">
+        <p class="gallery-note">More project photos will be added here.</p>
+      </div>
+
+      <div class="services-row">
         <article class="service-item">
           <div class="service-photo">
             <img src="{{ '/assets/images/IMG_4842.jpg' | relative_url }}" alt="Completed garden and landscaping project">
@@ -303,7 +318,6 @@ permalink: /
           </div>
           <p><strong>Renovations &amp; improvements</strong><br>Kitchen, bathrooms, plastering, decorating, flooring and general home improvements.</p>
         </article>
-        </div>
       </div>
     </section>
   </main>
