@@ -127,17 +127,19 @@ permalink: /
     .contact-options small{margin-top:2px;color:#5d5a50;font-size:12px}
     @media(max-width:760px){.contact-dropdown{width:auto}}
   
-    /* Compact trust and social footer */
-    .site-footer{height:54px;background:#173f34;color:#fff}
-    .footer-row{width:min(1120px,calc(100% - 40px));height:54px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:18px;white-space:nowrap}
-    .footer-row strong{font-family:Georgia,"Times New Roman",serif;font-size:12px}
+    /* Trust statements above the green footer */
+    .trust-strip{height:30px;background:#f0efdc;color:#a73534}
+    .trust-row{width:min(1120px,calc(100% - 40px));height:30px;margin:0 auto;display:flex;align-items:center;justify-content:space-around;gap:18px;white-space:nowrap}
+    .trust-row strong{font-family:Georgia,"Times New Roman",serif;font-size:12px}
+    .site-footer{height:32px;background:#173f34;color:#fff}
+    .footer-row{width:min(1120px,calc(100% - 40px));height:32px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:18px;white-space:nowrap}
     .copyright{font-size:10px;color:#e6eadf}
     .footer-socials{display:flex;align-items:center;gap:9px}
-    .footer-socials span{display:grid;place-items:center;width:22px;height:22px;border:1px solid rgba(255,255,255,.65);border-radius:50%;font-weight:700;font-size:12px}
-    @media(min-width:761px){.blank-page{height:calc(100vh - 129px)}}
+    .footer-socials span{display:grid;place-items:center;width:20px;height:20px;border:1px solid rgba(255,255,255,.65);border-radius:50%;font-weight:700;font-size:11px}
+    @media(min-width:761px){.blank-page{height:calc(100vh - 137px)}}
     @media(max-width:760px){
-      .site-footer{height:auto}
-      .footer-row{height:auto;min-height:54px;padding:12px 0;flex-wrap:wrap;white-space:normal}
+      .trust-strip,.site-footer{height:auto}
+      .trust-row,.footer-row{height:auto;min-height:32px;padding:8px 0;flex-wrap:wrap;white-space:normal}
     }
   </style>
 </head>
@@ -216,12 +218,16 @@ permalink: /
       </div>
     </section>
   </main>
-  <footer class="site-footer">
-    <div class="footer-row">
+  <section class="trust-strip" aria-label="Why choose Bobby Pro Builds">
+    <div class="trust-row">
       <strong>15+ Years’ Experience</strong>
       <strong>Fully Insured</strong>
       <strong>Covering England</strong>
       <strong>Quality Work</strong>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div class="footer-row">
       <span class="copyright">&copy; 2026 Bobby Pro Builds</span>
       <div class="footer-socials" aria-label="Social media">
         <span aria-label="Facebook">f</span>
