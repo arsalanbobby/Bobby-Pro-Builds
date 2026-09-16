@@ -207,3 +207,5 @@
   }
   .kitchen-note{left:72%}
 }
+
+@media(min-width:901px){.showcase-copy{align-items:flex-start}.showcase-copy .btn{align-self:flex-start}}
