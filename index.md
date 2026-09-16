@@ -29,9 +29,9 @@ permalink: /
     .hero-title span{display:block;color:#a73534;white-space:nowrap}
     .hero-title strong{display:block;color:#173f34;white-space:nowrap}
     .hero-intro{max-width:480px;margin:0;color:#2d2d2d;font-family:Georgia,"Times New Roman",serif;font-size:15px;line-height:1.5}
-    .hero-photo{position:relative;width:340px;height:340px;max-width:100%;justify-self:end;margin-left:0;z-index:1;overflow:hidden;-webkit-mask-image:none;mask-image:none}
+    .hero-photo{position:relative;width:420px;height:340px;max-width:100%;justify-self:end;margin-left:0;z-index:1;overflow:hidden;-webkit-mask-image:none;mask-image:none}
     .hero-photo::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(to right,#f7f1e7 0,rgba(247,241,231,.94) 5%,rgba(247,241,231,.55) 12%,transparent 23%,transparent 77%,rgba(247,241,231,.55) 88%,rgba(247,241,231,.94) 95%,#f7f1e7 100%),linear-gradient(to bottom,#f7f1e7 0,rgba(247,241,231,.94) 5%,rgba(247,241,231,.55) 12%,transparent 23%,transparent 77%,rgba(247,241,231,.55) 88%,rgba(247,241,231,.94) 95%,#f7f1e7 100%)}
-    .hero-photo img{display:block;width:100%;height:100%;object-fit:contain;object-position:center}
+    .hero-photo img{display:block;width:100%;height:100%;object-fit:fill;object-position:center}
     @media(max-width:760px){
       .header-inner{min-height:74px;gap:14px}
       .logo img{width:235px;max-width:51vw}
