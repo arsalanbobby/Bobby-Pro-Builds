@@ -183,6 +183,25 @@ permalink: /
       .services-row .service-photo{width:280px;height:175px}
       .service-item p{font-size:15px}
     }
+
+    /* Comfortable spacing for the enlarged content */
+    @media(min-width:761px){
+      html,body{height:auto;overflow-x:hidden;overflow-y:auto}
+      .blank-page{height:auto;min-height:0;display:block;overflow:visible;padding:22px 0 34px}
+      .hero{height:auto;min-height:270px;margin-bottom:30px}
+      .hero-copy{padding:24px 0}
+      .hero-title{margin-bottom:26px}
+      .hero-photo{width:400px;height:230px}
+      .services-gallery{height:auto;min-height:0;padding-top:8px}
+      .services-header-row{gap:10px;padding:0 20px 22px}
+      .services-row{gap:42px}
+      .services-row .service-photo{width:270px;height:155px;margin-bottom:12px}
+      .service-item p{line-height:1.5}
+      .trust-strip{height:78px}
+      .trust-row{height:78px}
+      .site-footer{height:108px}
+      .footer-row{height:108px;padding-top:20px}
+    }
   </style>
 </head>
 <body>
