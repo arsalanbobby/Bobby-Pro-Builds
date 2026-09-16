@@ -251,6 +251,10 @@ permalink: /
     .about-dropdown p:not(.dropdown-label){margin:0 0 11px;color:#333;font-family:Georgia,"Times New Roman",serif;font-size:14px;line-height:1.5}
     .about-dropdown p:last-child{margin-bottom:0}
     @media(max-width:760px){.about-dropdown{width:auto}}
+
+    /* Home is a simple link, not a dropdown */
+    .home-link{display:inline-block;text-decoration:none}
+    .home-link::after{content:none}
   </style>
 </head>
 <body>
@@ -260,10 +264,7 @@ permalink: /
         <img src="{{ '/assets/logo.svg' | relative_url }}" alt="Bobby Pro Builds logo">
       </a>
       <nav class="navigation" aria-label="Main navigation">
-        <div class="nav-item">
-          <button class="nav-button" type="button" aria-expanded="false">Home</button>
-          <div class="dropdown"><h2>Home</h2></div>
-        </div>
+        <a class="nav-button home-link" href="/">Home</a>
         <div class="nav-item">
           <button class="nav-button" type="button" aria-expanded="false">About</button>
           <div class="dropdown about-dropdown">
