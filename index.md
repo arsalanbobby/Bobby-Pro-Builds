@@ -81,6 +81,25 @@ permalink: /
       .renovation-text{left:25px;top:185px;width:390px}
       .service-text{font-size:13px;line-height:1.35}
     }
+  
+    /* Three services: photos side by side with matching writing underneath */
+    .services-gallery{position:relative;width:min(1120px,calc(100% - 40px));margin:0 auto;font-family:Georgia,"Times New Roman",serif}
+    .services-header-row{display:flex;align-items:baseline;gap:42px;padding:2px 20px 5px}
+    .services-header-row .services-kicker,.services-header-row .services-heading{position:static;margin:0;width:auto}
+    .services-header-row .services-kicker{color:#a73534;font-size:17px;font-weight:700}
+    .services-header-row .services-heading{color:#173f34;font-size:20px;line-height:1.2}
+    .services-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:34px;padding:0 20px}
+    .service-item{min-width:0}
+    .services-row .service-photo{position:relative;inset:auto;width:220px;height:125px;margin:0 auto 5px;overflow:hidden}
+    .services-row .service-photo img{display:block;width:100%;height:100%;object-fit:contain}
+    .service-item p{max-width:290px;margin:0 auto;color:#202020;font-size:13px;line-height:1.35}
+    @media(max-width:760px){
+      .services-header-row{display:block;padding:0}
+      .services-header-row .services-heading{margin-top:6px}
+      .services-row{grid-template-columns:1fr;padding:0;gap:18px}
+      .services-row .service-photo{width:250px;height:160px}
+      .service-item p{max-width:330px}
+    }
   </style>
 </head>
 <body>
@@ -120,22 +139,32 @@ permalink: /
     </section>
 
     <section class="services-gallery" aria-labelledby="services-heading">
-      <p class="services-kicker">Our Services &amp; Gallery</p>
-      <h2 id="services-heading" class="services-heading">Building &amp; Renovation</h2>
-
-      <div class="service-photo service-garden">
-        <img src="{{ '/assets/images/IMG_4842.jpg' | relative_url }}" alt="Completed garden and landscaping project">
-      </div>
-      <p class="service-text garden-text">Patios, paving, fencing, garden clearance, lawns, garden buildings and outdoor spaces.</p>
-
-      <p class="service-text extension-text">House extensions, conversions and loft conversions to create more useful space.</p>
-      <div class="service-photo service-house">
-        <img src="{{ '/assets/images/IMG_4841.jpg' | relative_url }}" alt="Completed house extension">
+      <div class="services-header-row">
+        <p class="services-kicker">Our Services &amp; Gallery</p>
+        <h2 id="services-heading" class="services-heading">Building &amp; Renovation</h2>
       </div>
 
-      <p class="service-text renovation-text"><strong>Renovations &amp; improvements</strong><br>Kitchen, bathrooms, plastering, decorating, flooring and general home improvements.</p>
-      <div class="service-photo service-bathroom">
-        <img src="{{ '/assets/images/IMG_4844.jpg' | relative_url }}" alt="Completed bathroom renovation">
+      <div class="services-row">
+        <article class="service-item">
+          <div class="service-photo">
+            <img src="{{ '/assets/images/IMG_4842.jpg' | relative_url }}" alt="Completed garden and landscaping project">
+          </div>
+          <p>Patios, paving, fencing, garden clearance, lawns, garden buildings and outdoor spaces.</p>
+        </article>
+
+        <article class="service-item">
+          <div class="service-photo">
+            <img src="{{ '/assets/images/IMG_4841.jpg' | relative_url }}" alt="Completed house extension">
+          </div>
+          <p>House extensions, conversions and loft conversions to create more useful space.</p>
+        </article>
+
+        <article class="service-item">
+          <div class="service-photo">
+            <img src="{{ '/assets/images/IMG_4844.jpg' | relative_url }}" alt="Completed bathroom renovation">
+          </div>
+          <p><strong>Renovations &amp; improvements</strong><br>Kitchen, bathrooms, plastering, decorating, flooring and general home improvements.</p>
+        </article>
       </div>
     </section>
   </main>
