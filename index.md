@@ -16,7 +16,7 @@ permalink: /
     .logo img{display:block;width:335px;max-width:48vw;height:auto}
     .navigation{display:flex;align-items:center;gap:24px}
     .nav-item{position:relative}
-    .nav-button{border:0;background:transparent;padding:12px 4px;color:#202020;font:inherit;font-weight:700;cursor:pointer}
+    .nav-button{border:0;background:transparent;padding:12px 4px;color:#173f34;font:inherit;font-weight:700;cursor:pointer}
     .nav-button:hover,.nav-button[aria-expanded="true"]{color:#a73534}
     .nav-button::after{content:"▾";margin-left:7px;font-size:.75em}
     .dropdown{position:absolute;top:calc(100% + 8px);right:0;width:250px;min-height:70px;padding:20px;background:#fff;border:1px solid #e7ded7;border-radius:10px;box-shadow:0 14px 34px rgba(30,22,18,.15);opacity:0;visibility:hidden;transform:translateY(-6px);transition:.16s ease}
