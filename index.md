@@ -268,9 +268,9 @@ permalink: /
           <button class="nav-button" type="button" aria-expanded="false">About</button>
           <div class="dropdown about-dropdown">
             <p class="dropdown-label">ABOUT US</p>
-            <h2>Over 15 years of building experience</h2>
-            <p>Looking to improve your home? Bobby Pro Builds offers reliable building, renovation and property improvement services, with quality workmanship and attention to every detail.</p>
-            <p>From small improvements to complete renovations, we work closely with you to bring your ideas to life and create a home you will be proud of.</p>
+            <h2>Helping people improve their homes for over 15 years</h2>
+            <p>At Bobby Pro Builds, we know how important your home is. We listen to what you want, keep you updated and take care with every part of the job.</p>
+            <p>Whether you are planning a small improvement or a full renovation, we are here to help turn your ideas into a home you will love.</p>
           </div>
         </div>
         <div class="nav-item">
