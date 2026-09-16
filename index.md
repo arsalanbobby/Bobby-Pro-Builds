@@ -23,13 +23,13 @@ permalink: /
     .nav-item.open .dropdown{opacity:1;visibility:visible;transform:none}
     .dropdown h2{margin:0;color:#173f34;font-family:Georgia,serif;font-size:1.15rem}
     .blank-page{min-height:calc(100vh - 83px);background:#fff}
-    .hero{width:min(1120px,calc(100% - 40px));min-height:380px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+    .hero{width:min(1120px,calc(100% - 40px));min-height:380px;margin:0 auto;display:grid;grid-template-columns:52% 48%;gap:8px;align-items:center}
     .hero-copy{padding:42px 0}
-    .hero-title{margin:0 0 30px;font-family:Georgia,"Times New Roman",serif;font-size:18px;line-height:1.18;letter-spacing:0}
+    .hero-title{margin:0 0 30px;font-family:Georgia,"Times New Roman",serif;font-size:24px;line-height:1.16;letter-spacing:0}
     .hero-title span{display:block;color:#a73534;white-space:nowrap}
     .hero-title strong{display:block;color:#173f34;white-space:nowrap}
-    .hero-intro{max-width:540px;margin:0;color:#2d2d2d;font-family:Georgia,"Times New Roman",serif;font-size:12px;line-height:1.55}
-    .hero-photo{position:relative;width:340px;height:340px;max-width:100%;justify-self:center;overflow:hidden;-webkit-mask-image:none;mask-image:none}
+    .hero-intro{max-width:540px;margin:0;color:#2d2d2d;font-family:Georgia,"Times New Roman",serif;font-size:14px;line-height:1.5}
+    .hero-photo{position:relative;width:340px;height:340px;max-width:100%;justify-self:start;overflow:hidden;-webkit-mask-image:none;mask-image:none}
     .hero-photo::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(to right,#fff 0,rgba(255,255,255,.94) 5%,rgba(255,255,255,.55) 12%,transparent 23%,transparent 77%,rgba(255,255,255,.55) 88%,rgba(255,255,255,.94) 95%,#fff 100%),linear-gradient(to bottom,#fff 0,rgba(255,255,255,.94) 5%,rgba(255,255,255,.55) 12%,transparent 23%,transparent 77%,rgba(255,255,255,.55) 88%,rgba(255,255,255,.94) 95%,#fff 100%)}
     .hero-photo img{display:block;width:100%;height:100%;object-fit:contain;object-position:center}
     @media(max-width:760px){
@@ -40,7 +40,7 @@ permalink: /
       .dropdown{position:fixed;top:74px;left:20px;right:20px;width:auto}
       .hero{grid-template-columns:1fr;gap:6px;padding:30px 0}
       .hero-copy{padding:10px 0}
-      .hero-title{font-size:18px;margin-bottom:22px}
+      .hero-title{font-size:22px;margin-bottom:22px}
       .hero-photo{width:250px;height:250px}
     }
   </style>
