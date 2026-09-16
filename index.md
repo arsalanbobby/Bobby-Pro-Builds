@@ -157,10 +157,9 @@ permalink: /
     <section class="services-gallery" aria-labelledby="services-heading">
       <div class="services-header-row">
         <h2 id="services-heading" class="services-heading">Building &amp; Renovation</h2>
-        <button class="services-toggle" type="button" aria-expanded="false" aria-controls="services-dropdown">Our Services &amp; Gallery <span>▾</span></button>
+        <p class="services-kicker">Our Services &amp; Gallery</p>
       </div>
 
-      <div id="services-dropdown" class="services-dropdown">
       <div class="services-row">
         <article class="service-item">
           <div class="service-photo">
@@ -182,7 +181,6 @@ permalink: /
           </div>
           <p><strong>Renovations &amp; improvements</strong><br>Kitchen, bathrooms, plastering, decorating, flooring and general home improvements.</p>
         </article>
-      </div>
       </div>
     </section>
   </main>
