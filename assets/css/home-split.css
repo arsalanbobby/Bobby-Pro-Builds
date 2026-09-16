@@ -155,3 +155,35 @@
   .service-photo-grid{grid-template-columns:1fr}
   .service-photo-card:last-child{grid-column:auto;max-width:none}
 }
+
+
+/* Blend the complete kitchen photograph into the hero writing */
+@media(min-width:901px){
+  .showcase-grid{position:relative;display:block}
+  .showcase-copy{position:relative;width:62%;height:245px;display:flex;flex-direction:column;justify-content:center}
+  .showcase-kitchen{
+    position:absolute;top:0;bottom:0;left:43%;right:0;
+    width:auto;height:245px;
+    background-image:url("../images/IMG_4849.jpg");
+    background-size:cover;
+    background-position:center 42%;
+    background-repeat:no-repeat;
+  }
+  .showcase-kitchen img{
+    position:absolute;top:0;right:0;
+    width:auto;height:100%;
+    object-fit:contain;object-position:right center;
+    -webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 24%,#000 100%);
+    mask-image:linear-gradient(90deg,transparent 0%,#000 24%,#000 100%);
+  }
+  .showcase-kitchen:before{
+    background:linear-gradient(90deg,
+      #f7f8ee 0%,
+      rgba(247,248,238,.96) 15%,
+      rgba(238,245,235,.76) 32%,
+      rgba(221,239,228,.36) 49%,
+      rgba(221,239,228,.08) 62%,
+      transparent 74%);
+  }
+  .kitchen-note{left:67%;top:66px}
+}
