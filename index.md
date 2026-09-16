@@ -28,8 +28,8 @@ permalink: /
     .hero-title{margin:0 0 30px;font-family:Georgia,"Times New Roman",serif;font-size:28px;line-height:1.14;letter-spacing:0}
     .hero-title span{display:block;color:#a73534;white-space:nowrap}
     .hero-title strong{display:block;color:#173f34;white-space:nowrap}
-    .hero-intro{max-width:540px;margin:0;color:#2d2d2d;font-family:Georgia,"Times New Roman",serif;font-size:15px;line-height:1.5}
-    .hero-photo{position:relative;width:340px;height:340px;max-width:100%;justify-self:start;margin-left:-155px;z-index:1;overflow:hidden;-webkit-mask-image:none;mask-image:none}
+    .hero-intro{max-width:480px;margin:0;color:#2d2d2d;font-family:Georgia,"Times New Roman",serif;font-size:15px;line-height:1.5}
+    .hero-photo{position:relative;width:340px;height:340px;max-width:100%;justify-self:start;margin-left:-95px;z-index:1;overflow:hidden;-webkit-mask-image:none;mask-image:none}
     .hero-photo::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(to right,#fff 0,rgba(255,255,255,.94) 5%,rgba(255,255,255,.55) 12%,transparent 23%,transparent 77%,rgba(255,255,255,.55) 88%,rgba(255,255,255,.94) 95%,#fff 100%),linear-gradient(to bottom,#fff 0,rgba(255,255,255,.94) 5%,rgba(255,255,255,.55) 12%,transparent 23%,transparent 77%,rgba(255,255,255,.55) 88%,rgba(255,255,255,.94) 95%,#fff 100%)}
     .hero-photo img{display:block;width:100%;height:100%;object-fit:contain;object-position:center}
     @media(max-width:760px){
