@@ -32,6 +32,19 @@ permalink: /
     .hero-photo{position:relative;width:420px;height:340px;max-width:100%;justify-self:end;margin-left:0;z-index:1;overflow:hidden;-webkit-mask-image:none;mask-image:none}
     .hero-photo::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(to right,#f7f1e7 0,rgba(247,241,231,.94) 5%,rgba(247,241,231,.55) 12%,transparent 23%,transparent 77%,rgba(247,241,231,.55) 88%,rgba(247,241,231,.94) 95%,#f7f1e7 100%),linear-gradient(to bottom,#f7f1e7 0,rgba(247,241,231,.94) 5%,rgba(247,241,231,.55) 12%,transparent 23%,transparent 77%,rgba(247,241,231,.55) 88%,rgba(247,241,231,.94) 95%,#f7f1e7 100%)}
     .hero-photo img{display:block;width:100%;height:100%;object-fit:fill;object-position:center}
+    .services-gallery{position:relative;width:min(1120px,calc(100% - 40px));height:430px;margin:0 auto;padding-top:10px;font-family:Georgia,"Times New Roman",serif}
+    .services-kicker{position:absolute;left:20px;top:8px;margin:0;color:#a73534;font-size:20px;font-weight:700}
+    .services-heading{position:absolute;left:390px;top:28px;margin:0;color:#173f34;font-size:24px;line-height:1.2}
+    .service-photo{position:absolute;overflow:hidden}
+    .service-photo img{display:block;width:100%;height:auto}
+    .service-photo::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(to right,#f7f1e7 0,rgba(247,241,231,.94) 5%,rgba(247,241,231,.55) 12%,transparent 23%,transparent 77%,rgba(247,241,231,.55) 88%,rgba(247,241,231,.94) 95%,#f7f1e7 100%),linear-gradient(to bottom,#f7f1e7 0,rgba(247,241,231,.94) 5%,rgba(247,241,231,.55) 12%,transparent 23%,transparent 77%,rgba(247,241,231,.55) 88%,rgba(247,241,231,.94) 95%,#f7f1e7 100%)}
+    .service-garden{left:20px;top:70px;width:230px}
+    .service-house{right:20px;top:105px;width:230px}
+    .service-bathroom{left:455px;top:230px;width:210px}
+    .service-text{position:absolute;margin:0;color:#202020;font-size:15px;line-height:1.45}
+    .garden-text{left:290px;top:88px;width:430px}
+    .extension-text{left:285px;top:195px;width:280px}
+    .renovation-text{left:25px;top:300px;width:390px}
     @media(max-width:760px){
       .header-inner{min-height:74px;gap:14px}
       .logo img{width:235px;max-width:51vw}
@@ -42,6 +55,10 @@ permalink: /
       .hero-copy{padding:10px 0}
       .hero-title{font-size:26px;margin-bottom:22px}
       .hero-photo{width:250px;height:250px;margin-left:0;justify-self:center}
+      .services-gallery{position:static;height:auto;padding:26px 0 40px;display:grid;grid-template-columns:1fr;gap:18px}
+      .services-kicker,.services-heading,.service-photo,.service-text{position:static;width:100%}
+      .services-heading{font-size:22px}
+      .service-photo{max-width:330px;margin:0 auto}
     }
   </style>
 </head>
@@ -78,6 +95,26 @@ permalink: /
       </div>
       <div class="hero-photo">
         <img src="{{ '/assets/images/2ff575ca-cc75-410e-b5b4-560d87022bf0.jpg' | relative_url }}?v=red-lights-1" alt="Completed modern kitchen by Bobby Pro Builds">
+      </div>
+    </section>
+
+    <section class="services-gallery" aria-labelledby="services-heading">
+      <p class="services-kicker">Our Services &amp; Gallery</p>
+      <h2 id="services-heading" class="services-heading">Building &amp; Renovation</h2>
+
+      <div class="service-photo service-garden">
+        <img src="{{ '/assets/images/IMG_4842.jpg' | relative_url }}" alt="Completed garden and landscaping project">
+      </div>
+      <p class="service-text garden-text">Patios, paving, fencing, garden clearance, lawns, garden buildings and outdoor spaces.</p>
+
+      <p class="service-text extension-text">House extensions, conversions and loft conversions to create more useful space.</p>
+      <div class="service-photo service-house">
+        <img src="{{ '/assets/images/IMG_4841.jpg' | relative_url }}" alt="Completed house extension">
+      </div>
+
+      <p class="service-text renovation-text"><strong>Renovations &amp; improvements</strong><br>Kitchen, bathrooms, plastering, decorating, flooring and general home improvements.</p>
+      <div class="service-photo service-bathroom">
+        <img src="{{ '/assets/images/IMG_4844.jpg' | relative_url }}" alt="Completed bathroom renovation">
       </div>
     </section>
   </main>
