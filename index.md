@@ -9,8 +9,8 @@ permalink: /
   <title>Bobby Pro Builds</title>
   <style>
     *{box-sizing:border-box}
-    html,body{margin:0;width:100%;min-height:100%;background:#fff;color:#202020;font-family:Arial,sans-serif}
-    .site-header{position:relative;z-index:10;background:#fff;border-bottom:1px solid #ece7e3}
+    html,body{margin:0;width:100%;min-height:100%;background:#f7f1e7;color:#202020;font-family:Arial,sans-serif}
+    .site-header{position:relative;z-index:10;background:#f7f1e7;border-bottom:1px solid #ece7e3}
     .header-inner{width:min(1120px,calc(100% - 40px));min-height:82px;margin:0 auto;display:flex;align-items:center;gap:28px}
     .logo{display:block;margin-right:auto}
     .logo img{display:block;width:335px;max-width:48vw;height:auto}
@@ -22,7 +22,7 @@ permalink: /
     .dropdown{position:absolute;top:calc(100% + 8px);right:0;width:250px;min-height:70px;padding:20px;background:#fff;border:1px solid #e7ded7;border-radius:10px;box-shadow:0 14px 34px rgba(30,22,18,.15);opacity:0;visibility:hidden;transform:translateY(-6px);transition:.16s ease}
     .nav-item.open .dropdown{opacity:1;visibility:visible;transform:none}
     .dropdown h2{margin:0;color:#173f34;font-family:Georgia,serif;font-size:1.15rem}
-    .blank-page{min-height:calc(100vh - 83px);background:#fff}
+    .blank-page{min-height:calc(100vh - 83px);background:#f7f1e7}
     .hero{width:min(1120px,calc(100% - 40px));min-height:380px;margin:0 auto;display:grid;grid-template-columns:52% 48%;gap:8px;align-items:center}
     .hero-copy{position:relative;z-index:2;padding:42px 0}
     .hero-title{margin:0 0 30px;font-family:Georgia,"Times New Roman",serif;font-size:28px;line-height:1.14;letter-spacing:0}
@@ -30,7 +30,7 @@ permalink: /
     .hero-title strong{display:block;color:#173f34;white-space:nowrap}
     .hero-intro{max-width:480px;margin:0;color:#2d2d2d;font-family:Georgia,"Times New Roman",serif;font-size:15px;line-height:1.5}
     .hero-photo{position:relative;width:340px;height:340px;max-width:100%;justify-self:end;margin-left:0;z-index:1;overflow:hidden;-webkit-mask-image:none;mask-image:none}
-    .hero-photo::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(to right,#fff 0,rgba(255,255,255,.94) 5%,rgba(255,255,255,.55) 12%,transparent 23%,transparent 77%,rgba(255,255,255,.55) 88%,rgba(255,255,255,.94) 95%,#fff 100%),linear-gradient(to bottom,#fff 0,rgba(255,255,255,.94) 5%,rgba(255,255,255,.55) 12%,transparent 23%,transparent 77%,rgba(255,255,255,.55) 88%,rgba(255,255,255,.94) 95%,#fff 100%)}
+    .hero-photo::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(to right,#f7f1e7 0,rgba(247,241,231,.94) 5%,rgba(247,241,231,.55) 12%,transparent 23%,transparent 77%,rgba(247,241,231,.55) 88%,rgba(247,241,231,.94) 95%,#f7f1e7 100%),linear-gradient(to bottom,#f7f1e7 0,rgba(247,241,231,.94) 5%,rgba(247,241,231,.55) 12%,transparent 23%,transparent 77%,rgba(247,241,231,.55) 88%,rgba(247,241,231,.94) 95%,#f7f1e7 100%)}
     .hero-photo img{display:block;width:100%;height:100%;object-fit:contain;object-position:center}
     @media(max-width:760px){
       .header-inner{min-height:74px;gap:14px}
