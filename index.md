@@ -30,7 +30,7 @@ permalink: /
     .hero-title strong{display:block;color:#173f34;white-space:nowrap}
     .hero-intro{max-width:540px;margin:0;color:#2d2d2d;font-family:Georgia,"Times New Roman",serif;font-size:12px;line-height:1.55}
     .hero-photo{position:relative;width:340px;height:340px;max-width:100%;justify-self:center;overflow:hidden;-webkit-mask-image:none;mask-image:none}
-    .hero-photo::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(to right,#fff 0,rgba(255,255,255,.82) 4%,transparent 13%,transparent 87%,rgba(255,255,255,.82) 96%,#fff 100%),linear-gradient(to bottom,#fff 0,rgba(255,255,255,.82) 4%,transparent 13%,transparent 87%,rgba(255,255,255,.82) 96%,#fff 100%)}
+    .hero-photo::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(to right,#fff 0,rgba(255,255,255,.94) 5%,rgba(255,255,255,.55) 12%,transparent 23%,transparent 77%,rgba(255,255,255,.55) 88%,rgba(255,255,255,.94) 95%,#fff 100%),linear-gradient(to bottom,#fff 0,rgba(255,255,255,.94) 5%,rgba(255,255,255,.55) 12%,transparent 23%,transparent 77%,rgba(255,255,255,.55) 88%,rgba(255,255,255,.94) 95%,#fff 100%)}
     .hero-photo img{display:block;width:100%;height:100%;object-fit:contain;object-position:center}
     @media(max-width:760px){
       .header-inner{min-height:74px;gap:14px}
