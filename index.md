@@ -25,7 +25,7 @@ permalink: /
     .blank-page{min-height:calc(100vh - 83px);background:#f7f1e7}
     .hero{width:min(1120px,calc(100% - 40px));min-height:380px;margin:0 auto;display:grid;grid-template-columns:52% 48%;gap:8px;align-items:center}
     .hero-copy{position:relative;z-index:2;padding:42px 0}
-    .hero-title{margin:0 0 30px;font-family:Georgia,"Times New Roman",serif;font-size:28px;line-height:1.14;letter-spacing:0}
+    .hero-title{margin:0 0 30px;font-family:Georgia,"Times New Roman",serif;font-size:26px;line-height:1.14;letter-spacing:0}
     .hero-title span{display:block;color:#a73534;white-space:nowrap}
     .hero-title strong{display:block;color:#173f34;white-space:nowrap}
     .hero-intro{max-width:480px;margin:0;color:#2d2d2d;font-family:Georgia,"Times New Roman",serif;font-size:15px;line-height:1.5}
@@ -40,7 +40,7 @@ permalink: /
       .dropdown{position:fixed;top:74px;left:20px;right:20px;width:auto}
       .hero{grid-template-columns:1fr;gap:6px;padding:30px 0}
       .hero-copy{padding:10px 0}
-      .hero-title{font-size:24px;margin-bottom:22px}
+      .hero-title{font-size:26px;margin-bottom:22px}
       .hero-photo{width:250px;height:250px;margin-left:0;justify-self:center}
     }
   </style>
