@@ -2,269 +2,469 @@
 layout: null
 permalink: /
 ---
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bobby Pro Builds</title>
   <style>
+    :root{
+      --cream:#f0efdc;
+      --green:#173f34;
+      --light-green:#2f8a51;
+      --red:#a73534;
+      --text:#252525;
+      --line:rgba(23,63,52,.14);
+    }
+
     *{box-sizing:border-box}
-    html,body{margin:0;width:100%;min-height:100%;background:#f0efdc;color:#202020;font-family:Arial,sans-serif}
-    .site-header{position:relative;z-index:10;background:#f0efdc;border-bottom:1px solid #ece7e3}
-    .header-inner{width:min(1120px,calc(100% - 40px));min-height:82px;margin:0 auto;display:flex;align-items:center;gap:28px}
-    .logo{display:block;margin-right:auto}
-    .logo img{display:block;width:335px;max-width:48vw;height:auto}
-    .navigation{display:flex;align-items:center;gap:24px}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      background:var(--cream);
+      color:var(--text);
+      font-family:Arial,sans-serif;
+      font-size:16px;
+      line-height:1.5;
+    }
+
+    .page-width{
+      width:min(1080px,calc(100% - 48px));
+      margin:0 auto;
+    }
+
+    /* Header */
+    .site-header{
+      position:relative;
+      z-index:20;
+      background:rgba(240,239,220,.98);
+      border-bottom:1px solid var(--line);
+    }
+
+    .header-inner{
+      min-height:82px;
+      display:flex;
+      align-items:center;
+      gap:34px;
+    }
+
+    .logo{
+      display:block;
+      margin-right:auto;
+    }
+
+    .logo img{
+      display:block;
+      width:285px;
+      max-width:44vw;
+      height:auto;
+    }
+
+    .navigation{
+      display:flex;
+      align-items:center;
+      gap:26px;
+    }
+
     .nav-item{position:relative}
-    .nav-button{border:0;background:transparent;padding:12px 4px;color:#173f34;font:inherit;font-weight:700;cursor:pointer}
-    .nav-button:hover,.nav-button[aria-expanded="true"]{color:#a73534}
-    .nav-button::after{content:"▾";margin-left:7px;font-size:.75em}
-    .dropdown{position:absolute;top:calc(100% + 8px);right:0;width:250px;min-height:70px;padding:20px;background:#fff;border:1px solid #e7ded7;border-radius:10px;box-shadow:0 14px 34px rgba(30,22,18,.15);opacity:0;visibility:hidden;transform:translateY(-6px);transition:.16s ease}
-    .nav-item.open .dropdown{opacity:1;visibility:visible;transform:none}
-    .dropdown h2{margin:0;color:#173f34;font-family:Georgia,serif;font-size:1.15rem}
-    .blank-page{min-height:calc(100vh - 83px);background:#f0efdc}
-    .hero{width:min(1120px,calc(100% - 40px));min-height:380px;margin:0 auto;display:grid;grid-template-columns:52% 48%;gap:8px;align-items:center}
-    .hero-copy{position:relative;z-index:2;padding:42px 0}
-    .hero-title{margin:0 0 30px;font-family:Georgia,"Times New Roman",serif;font-size:26px;line-height:1.14;letter-spacing:0}
-    .hero-title span{display:block;color:#a73534;white-space:nowrap}
-    .hero-title strong{display:block;color:#173f34;white-space:nowrap}
-    .hero-intro{max-width:480px;margin:0;color:#2d2d2d;font-family:Georgia,"Times New Roman",serif;font-size:15px;line-height:1.5}
-    .hero-photo{position:relative;width:420px;height:340px;max-width:100%;justify-self:end;margin-left:0;z-index:1;overflow:hidden;-webkit-mask-image:none;mask-image:none}
-    .hero-photo::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(to right,#f0efdc 0,rgba(240,239,220,.94) 5%,rgba(240,239,220,.55) 12%,transparent 23%,transparent 77%,rgba(240,239,220,.55) 88%,rgba(240,239,220,.94) 95%,#f0efdc 100%),linear-gradient(to bottom,#f0efdc 0,rgba(240,239,220,.94) 5%,rgba(240,239,220,.55) 12%,transparent 23%,transparent 77%,rgba(240,239,220,.55) 88%,rgba(240,239,220,.94) 95%,#f0efdc 100%)}
-    .hero-photo img{display:block;width:100%;height:100%;object-fit:fill;object-position:center}
-    .services-gallery{position:relative;width:min(1120px,calc(100% - 40px));height:430px;margin:0 auto;padding-top:10px;font-family:Georgia,"Times New Roman",serif}
-    .services-kicker{position:absolute;left:20px;top:8px;margin:0;color:#a73534;font-size:20px;font-weight:700}
-    .services-heading{position:absolute;left:390px;top:28px;margin:0;color:#173f34;font-size:24px;line-height:1.2}
-    .service-photo{position:absolute;overflow:hidden}
-    .service-photo img{display:block;width:100%;height:auto}
-    .service-photo::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(to right,#f0efdc 0,rgba(240,239,220,.94) 5%,rgba(240,239,220,.55) 12%,transparent 23%,transparent 77%,rgba(240,239,220,.55) 88%,rgba(240,239,220,.94) 95%,#f0efdc 100%),linear-gradient(to bottom,#f0efdc 0,rgba(240,239,220,.94) 5%,rgba(240,239,220,.55) 12%,transparent 23%,transparent 77%,rgba(240,239,220,.55) 88%,rgba(240,239,220,.94) 95%,#f0efdc 100%)}
-    .service-garden{left:20px;top:70px;width:230px}
-    .service-house{right:20px;top:105px;width:230px}
-    .service-bathroom{left:455px;top:230px;width:210px}
-    .service-text{position:absolute;margin:0;color:#202020;font-size:15px;line-height:1.45}
-    .garden-text{left:290px;top:88px;width:430px}
-    .extension-text{left:285px;top:195px;width:280px}
-    .renovation-text{left:25px;top:300px;width:390px}
-    @media(max-width:760px){
-      .header-inner{min-height:74px;gap:14px}
-      .logo img{width:235px;max-width:51vw}
-      .navigation{gap:8px}
-      .nav-button{font-size:.78rem}
-      .dropdown{position:fixed;top:74px;left:20px;right:20px;width:auto}
-      .hero{grid-template-columns:1fr;gap:6px;padding:30px 0}
-      .hero-copy{padding:10px 0}
-      .hero-title{font-size:26px;margin-bottom:22px}
-      .hero-photo{width:250px;height:250px;margin-left:0;justify-self:center}
-      .services-gallery{position:static;height:auto;padding:26px 0 40px;display:grid;grid-template-columns:1fr;gap:18px}
-      .services-kicker,.services-heading,.service-photo,.service-text{position:static;width:100%}
-      .services-heading{font-size:22px}
-      .service-photo{max-width:330px;margin:0 auto}
-    }
-  
-    @media(min-width:761px){
-      html,body{height:100%;overflow:hidden}
-      .header-inner{min-height:74px}
-      .blank-page{height:calc(100vh - 75px);min-height:0;display:grid;grid-template-rows:250px minmax(0,1fr);overflow:hidden}
-      .hero{width:min(1120px,calc(100% - 40px));height:250px;min-height:0;gap:8px}
-      .hero-copy{padding:12px 0}
-      .hero-title{margin-bottom:20px}
-      .hero-photo{width:380px;height:240px}
-      .services-gallery{height:100%;min-height:0;padding-top:0}
-      .services-kicker{left:20px;top:2px;font-size:17px}
-      .services-heading{left:390px;top:2px;font-size:20px}
-      .service-photo img{width:100%;height:100%;object-fit:contain}
-      .service-garden{left:20px;top:36px;width:190px;height:130px}
-      .garden-text{left:245px;top:42px;width:375px}
-      .service-house{right:20px;top:38px;width:190px;height:130px}
-      .extension-text{left:300px;top:125px;width:270px}
-      .service-bathroom{left:480px;top:145px;width:170px;height:115px}
-      .renovation-text{left:25px;top:185px;width:390px}
-      .service-text{font-size:13px;line-height:1.35}
-    }
-  
-    /* Three services: photos side by side with matching writing underneath */
-    .services-gallery{position:relative;width:min(1120px,calc(100% - 40px));margin:0 auto;font-family:Georgia,"Times New Roman",serif}
-    .services-header-row{display:flex;align-items:baseline;gap:42px;padding:2px 20px 5px}
-    .services-header-row .services-kicker,.services-header-row .services-heading{position:static;margin:0;width:auto}
-    .services-header-row .services-kicker{color:#a73534;font-size:17px;font-weight:700}
-    .services-header-row .services-heading{color:#173f34;font-size:20px;line-height:1.2}
-    .services-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:34px;padding:0 20px}
-    .service-item{min-width:0}
-    .services-row .service-photo{position:relative;inset:auto;width:220px;height:125px;margin:0 auto 5px;overflow:hidden}
-    .services-row .service-photo img{display:block;width:100%;height:100%;object-fit:contain}
-    .service-item p{max-width:290px;margin:0 auto;color:#202020;font-size:13px;line-height:1.35}
-    @media(max-width:760px){
-      .services-header-row{display:block;padding:0}
-      .services-header-row .services-heading{margin-top:6px}
-      .services-row{grid-template-columns:1fr;padding:0;gap:18px}
-      .services-row .service-photo{width:250px;height:160px}
-      .service-item p{max-width:330px}
-    }
-  
-    /* Stack the service headings with clear spacing */
-    .services-header-row{display:flex;flex-direction:column;align-items:flex-start;gap:8px;padding:0 20px 18px}
-    .services-header-row .services-heading{order:1}
-    .services-header-row .services-kicker{order:2}
-  
-    /* Click-to-open Services & Gallery */
-    .services-header-row .services-toggle{order:2;border:0;background:transparent;padding:0;color:#a73534;font-family:Georgia,"Times New Roman",serif;font-size:17px;font-weight:700;cursor:pointer}
-    .services-toggle span{display:inline-block;margin-left:6px;transition:transform .18s ease}
-    .services-gallery.open .services-toggle span{transform:rotate(180deg)}
-    .services-dropdown{position:absolute;left:0;right:0;top:58px;opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .18s ease,transform .18s ease}
-    .services-gallery.open .services-dropdown{opacity:1;visibility:visible;transform:none}
-    @media(max-width:760px){
-      .services-dropdown{position:static;display:none;opacity:1;visibility:visible;transform:none;margin-top:14px}
-      .services-gallery.open .services-dropdown{display:block}
-    }
-  
-    /* Contact & Get a Quote dropdown details */
-    .contact-dropdown{width:360px;padding:20px}
-    .contact-dropdown h2{margin:0 0 14px;font-size:22px}
-    .contact-options{display:grid;gap:8px}
-    .contact-options a{display:block;padding:10px 12px;border:1px solid rgba(23,63,52,.16);border-radius:8px;background:rgba(255,255,255,.52);text-decoration:none}
-    .contact-options strong,.contact-options small{display:block}
-    .contact-options strong{color:#173f34;font-size:14px}
-    .contact-options small{margin-top:2px;color:#5d5a50;font-size:12px}
-    @media(max-width:760px){.contact-dropdown{width:auto}}
-  
-    /* Trust statements and business footer */
-    .trust-strip{height:62px;background:#f0efdc;color:#202020}
-    .trust-row{width:min(1120px,calc(100% - 40px));height:62px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);align-items:center;gap:34px}
-    .trust-item{font-family:Georgia,"Times New Roman",serif}
-    .trust-item strong{display:block;color:#2f8a51;font-size:12px;line-height:1.2}
-    .trust-item span{display:block;margin-top:4px;color:#202020;font-size:12px;font-weight:700;line-height:1.2}
-    .site-footer{height:98px;background:#173f34;color:#fff}
-    .footer-row{position:relative;width:min(1120px,calc(100% - 40px));height:98px;margin:0 auto;padding:17px 0 12px}
-    .footer-details{display:grid;grid-template-columns:1fr 1.35fr;gap:70px;padding-bottom:13px;border-bottom:1px solid rgba(255,255,255,.14)}
-    .footer-details strong{display:block;font-family:Georgia,"Times New Roman",serif;font-size:12px}
-    .footer-details span{display:block;margin-top:7px;color:#e6eadf;font-size:11px}
-    .footer-bottom{display:flex;align-items:center;gap:14px;padding-top:8px}
-    .copyright{font-size:10px;color:#e6eadf}
-    .footer-socials{display:flex;align-items:center;gap:7px}
-    .footer-socials span{display:grid;place-items:center;width:18px;height:18px;border:1px solid rgba(255,255,255,.65);border-radius:50%;font-weight:700;font-size:10px}
-    .whatsapp-button{margin-left:auto;padding:7px 15px;border-radius:999px;background:#22c55e;color:#fff;text-decoration:none;font-size:11px;font-weight:700}
-    @media(min-width:761px){.blank-page{height:calc(100vh - 235px)}}
-    @media(max-width:760px){
-      .trust-strip,.site-footer{height:auto}
-      .trust-row{height:auto;padding:15px 0;grid-template-columns:repeat(2,1fr);gap:16px}
-      .footer-row{height:auto;padding:17px 0 12px}
-      .footer-details{grid-template-columns:1fr;gap:14px}
-      .footer-bottom{flex-wrap:wrap}
+
+    .nav-button{
+      display:inline-block;
+      border:0;
+      background:transparent;
+      padding:14px 0;
+      color:var(--green);
+      font:inherit;
+      font-size:16px;
+      font-weight:700;
+      text-decoration:none;
+      white-space:nowrap;
+      cursor:pointer;
     }
 
-    /* Larger website typography and service photos */
-    body{font-size:16px}
-    .nav-button{font-size:16px}
-    .dropdown h2{font-size:20px}
-    .hero-title{font-size:28px}
-    .hero-intro{font-size:16px;line-height:1.55}
-    .services-header-row .services-kicker{font-size:19px}
-    .services-header-row .services-heading{font-size:22px}
-    .services-row .service-photo{width:270px;height:155px}
-    .service-item p{max-width:320px;font-size:14px;line-height:1.4}
-    .trust-item strong{font-size:13px}
-    .trust-item span{font-size:12px}
-    .footer-details strong{font-size:13px}
-    .footer-details span{font-size:11px}
-    .copyright{font-size:11px}
-    .whatsapp-button{font-size:12px}
-    .contact-options strong{font-size:14px}
-    .contact-options small{font-size:13px}
-    @media(min-width:761px){
-      .blank-page{grid-template-rows:210px minmax(0,1fr)}
-      .hero{height:210px}
-      .hero-photo{width:400px;height:215px}
-      .services-header-row{gap:5px;padding-bottom:8px}
-    }
-    @media(max-width:760px){
-      .nav-button{font-size:14px}
-      .hero-title{font-size:28px}
-      .hero-intro{font-size:16px}
-      .services-row .service-photo{width:280px;height:175px}
-      .service-item p{font-size:15px}
+    button.nav-button::after{
+      content:"▾";
+      margin-left:7px;
+      font-size:.72em;
     }
 
-    /* Comfortable spacing for the enlarged content */
-    @media(min-width:761px){
-      html,body{height:auto;overflow-x:hidden;overflow-y:auto}
-      .blank-page{height:auto;min-height:0;display:block;overflow:visible;padding:22px 0 34px}
-      .hero{height:auto;min-height:270px;margin-bottom:30px}
-      .hero-copy{padding:24px 0}
-      .hero-title{margin-bottom:26px}
-      .hero-photo{width:400px;height:230px}
-      .services-gallery{height:auto;min-height:0;padding-top:8px}
-      .services-header-row{gap:10px;padding:0 20px 22px}
-      .services-row{gap:42px}
-      .services-row .service-photo{width:270px;height:155px;margin-bottom:12px}
-      .service-item p{line-height:1.5}
-      .trust-strip{height:78px}
-      .trust-row{height:78px}
-      .site-footer{height:108px}
-      .footer-row{height:108px;padding-top:20px}
+    .nav-button:hover,
+    .nav-button[aria-expanded="true"]{color:var(--red)}
+
+    .dropdown{
+      position:absolute;
+      top:calc(100% + 7px);
+      right:0;
+      width:390px;
+      padding:22px;
+      background:#fff;
+      border:1px solid #e5ded3;
+      border-radius:12px;
+      box-shadow:0 16px 38px rgba(23,35,29,.17);
+      opacity:0;
+      visibility:hidden;
+      transform:translateY(-7px);
+      transition:opacity .18s ease,transform .18s ease;
     }
 
-    /* Services and gallery click dropdown */
-    .services-header-row .services-toggle{
+    .nav-item.open .dropdown{
+      opacity:1;
+      visibility:visible;
+      transform:none;
+    }
+
+    .dropdown-label{
+      margin:0 0 8px;
+      color:var(--red);
+      font-size:12px;
+      font-weight:800;
+      letter-spacing:.12em;
+    }
+
+    .dropdown h2{
+      margin:0 0 12px;
+      color:var(--green);
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:21px;
+      line-height:1.25;
+    }
+
+    .about-dropdown p:not(.dropdown-label){
+      margin:0 0 11px;
+      color:#333;
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:14px;
+      line-height:1.55;
+    }
+
+    .about-dropdown p:last-child{margin-bottom:0}
+
+    .contact-dropdown{width:370px}
+
+    .contact-options{
+      display:grid;
+      gap:9px;
+    }
+
+    .contact-options a{
+      display:block;
+      padding:10px 12px;
+      border:1px solid var(--line);
+      border-radius:9px;
+      background:#fbfbf7;
+      text-decoration:none;
+    }
+
+    .contact-options strong,
+    .contact-options small{display:block}
+
+    .contact-options strong{
+      color:var(--green);
+      font-size:14px;
+    }
+
+    .contact-options small{
+      margin-top:2px;
+      color:#655f57;
+      font-size:12px;
+    }
+
+    /* Hero */
+    .hero{
+      display:grid;
+      grid-template-columns:minmax(0,1fr) minmax(380px,.92fr);
+      align-items:center;
+      gap:58px;
+      padding:42px 0 38px;
+    }
+
+    .hero-copy{max-width:520px}
+
+    .hero-title{
+      margin:0 0 24px;
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:32px;
+      line-height:1.12;
+    }
+
+    .hero-title span,
+    .hero-title strong{display:block}
+
+    .hero-title span{color:var(--red)}
+    .hero-title strong{color:var(--green)}
+
+    .hero-intro{
+      margin:0;
+      max-width:500px;
+      color:#333;
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:16px;
+      line-height:1.65;
+    }
+
+    .soft-photo{
+      position:relative;
+      overflow:hidden;
+      background:var(--cream);
+    }
+
+    .soft-photo::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      pointer-events:none;
+      background:
+        linear-gradient(to right,var(--cream) 0,rgba(240,239,220,.78) 7%,transparent 21%,transparent 79%,rgba(240,239,220,.78) 93%,var(--cream) 100%),
+        linear-gradient(to bottom,var(--cream) 0,rgba(240,239,220,.78) 7%,transparent 21%,transparent 79%,rgba(240,239,220,.78) 93%,var(--cream) 100%);
+    }
+
+    .hero-photo{
+      width:100%;
+      height:285px;
+    }
+
+    .hero-photo img,
+    .service-photo img{
+      display:block;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+
+    .hero-photo img{object-position:center}
+
+    /* Services */
+    .services-section{
+      padding:20px 0 48px;
+    }
+
+    .services-heading{
+      margin:0 0 10px;
+      color:var(--green);
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:26px;
+      line-height:1.2;
+    }
+
+    .services-toggle{
       display:inline-flex;
       align-items:center;
       gap:7px;
+      margin:0 0 26px;
       border:0;
       background:transparent;
       padding:0;
-      color:#a73534;
+      color:var(--red);
       font-family:Georgia,"Times New Roman",serif;
-      font-size:19px;
+      font-size:18px;
       font-weight:700;
       cursor:pointer;
     }
-    .services-toggle span{transition:transform .18s ease}
-    .services-gallery.open .services-toggle span{transform:rotate(180deg)}
-    .services-dropdown{position:static;display:none;opacity:1;visibility:visible;transform:none}
-    .services-gallery.open .services-dropdown{display:block}
 
-    /* Move the Building & Renovation section closer to the introduction */
-    @media(min-width:761px){
-      .services-gallery{margin-top:-24px}
+    .services-toggle span{transition:transform .18s ease}
+    .services-section.open .services-toggle span{transform:rotate(180deg)}
+
+    .services-dropdown{
+      display:none;
+      margin:-10px 0 28px;
+      padding:18px 20px;
+      border:1px solid var(--line);
+      border-radius:12px;
+      background:rgba(255,255,255,.5);
     }
 
-    /* Keep the three current service photos visible on the homepage */
-    .gallery-note{
-      margin:0 20px 18px;
-      padding:12px 15px;
-      color:#173f34;
-      background:rgba(255,255,255,.42);
-      border:1px solid rgba(23,63,52,.14);
-      border-radius:8px;
+    .services-section.open .services-dropdown{display:block}
+
+    .services-dropdown-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:24px;
+    }
+
+    .services-dropdown-grid strong{
+      display:block;
+      margin-bottom:4px;
+      color:var(--green);
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:15px;
+    }
+
+    .services-dropdown-grid span{
+      color:#555;
+      font-size:13px;
+      line-height:1.45;
+    }
+
+    .services-row{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:34px;
+    }
+
+    .service-item{min-width:0}
+
+    .service-photo{
+      width:100%;
+      height:185px;
+      margin:0 0 15px;
+    }
+
+    .service-item p{
+      margin:0;
+      color:#333;
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:15px;
+      line-height:1.5;
+    }
+
+    .service-item p strong{
+      display:block;
+      margin-bottom:3px;
+      color:var(--green);
+      font-size:16px;
+    }
+
+    /* Trust row */
+    .trust-strip{
+      background:#e9ead9;
+      border-top:1px solid var(--line);
+    }
+
+    .trust-row{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:28px;
+      padding:24px 0;
+    }
+
+    .trust-item strong{
+      display:block;
+      color:var(--light-green);
       font-family:Georgia,"Times New Roman",serif;
       font-size:14px;
     }
 
-    /* Move the main hero writing upward */
-    @media(min-width:761px){
-      .hero-copy{transform:translateY(-20px)}
+    .trust-item span{
+      display:block;
+      margin-top:4px;
+      color:#333;
+      font-size:13px;
+      font-weight:700;
     }
 
-    /* About dropdown */
-    .about-dropdown{width:390px;padding:22px}
-    .about-dropdown .dropdown-label{margin:0 0 8px;color:#a73534;font-size:12px;font-weight:700;letter-spacing:.12em}
-    .about-dropdown h2{margin:0 0 12px;color:#173f34;font-size:21px;line-height:1.25}
-    .about-dropdown p:not(.dropdown-label){margin:0 0 11px;color:#333;font-family:Georgia,"Times New Roman",serif;font-size:14px;line-height:1.5}
-    .about-dropdown p:last-child{margin-bottom:0}
-    @media(max-width:760px){.about-dropdown{width:auto}}
+    /* Footer */
+    .site-footer{
+      background:var(--green);
+      color:#fff;
+    }
 
-    /* Home is a simple link, not a dropdown */
-    .home-link{display:inline-block;text-decoration:none}
-    .home-link::after{content:none}
+    .footer-inner{padding:26px 0 18px}
+
+    .footer-details{
+      display:grid;
+      grid-template-columns:.8fr 1.3fr;
+      gap:70px;
+      padding-bottom:19px;
+      border-bottom:1px solid rgba(255,255,255,.16);
+    }
+
+    .footer-details strong{
+      display:block;
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:14px;
+    }
+
+    .footer-details span{
+      display:block;
+      margin-top:7px;
+      color:#e1e8e3;
+      font-size:13px;
+    }
+
+    .footer-bottom{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      padding-top:14px;
+    }
+
+    .copyright{
+      color:#e1e8e3;
+      font-size:11px;
+    }
+
+    .footer-socials{
+      display:flex;
+      align-items:center;
+      gap:8px;
+    }
+
+    .footer-socials span{
+      display:grid;
+      place-items:center;
+      width:22px;
+      height:22px;
+      border:1px solid rgba(255,255,255,.68);
+      border-radius:50%;
+      font-size:11px;
+      font-weight:700;
+    }
+
+    .whatsapp-button{
+      margin-left:auto;
+      padding:8px 16px;
+      border-radius:999px;
+      background:#22c55e;
+      color:#fff;
+      text-decoration:none;
+      font-size:12px;
+      font-weight:800;
+    }
+
+    @media(max-width:820px){
+      .page-width{width:min(100% - 32px,680px)}
+      .header-inner{min-height:76px;gap:18px}
+      .logo img{width:220px;max-width:45vw}
+      .navigation{gap:13px}
+      .nav-button{font-size:13px}
+      .hero{grid-template-columns:1fr;gap:24px;padding:34px 0}
+      .hero-copy{max-width:none}
+      .hero-title{font-size:29px}
+      .hero-photo{width:min(100%,480px);height:270px;margin:0 auto}
+      .services-row{grid-template-columns:1fr;gap:30px}
+      .service-photo{width:min(100%,430px);height:240px}
+      .service-item p{max-width:430px}
+      .services-dropdown-grid{grid-template-columns:1fr;gap:14px}
+      .trust-row{grid-template-columns:repeat(2,1fr)}
+      .footer-details{grid-template-columns:1fr;gap:18px}
+      .dropdown{position:fixed;top:76px;left:16px;right:16px;width:auto;max-height:calc(100vh - 92px);overflow:auto}
+    }
+
+    @media(max-width:560px){
+      .header-inner{align-items:flex-start;flex-wrap:wrap;padding:12px 0}
+      .logo{width:100%;margin:0}
+      .logo img{width:235px;max-width:80vw}
+      .navigation{width:100%;justify-content:space-between;gap:9px}
+      .nav-button{padding:7px 0;font-size:12px}
+      .hero-title{font-size:27px}
+      .hero-intro{font-size:15px}
+      .service-photo{height:210px}
+      .trust-row{grid-template-columns:1fr 1fr;gap:18px}
+      .footer-bottom{flex-wrap:wrap}
+    }
   </style>
 </head>
 <body>
   <header class="site-header">
-    <div class="header-inner">
+    <div class="header-inner page-width">
       <a class="logo" href="/" aria-label="Bobby Pro Builds home">
         <img src="{{ '/assets/logo.svg' | relative_url }}" alt="Bobby Pro Builds logo">
       </a>
+
       <nav class="navigation" aria-label="Main navigation">
-        <a class="nav-button home-link" href="/">Home</a>
+        <a class="nav-button" href="/">Home</a>
+
         <div class="nav-item">
           <button class="nav-button" type="button" aria-expanded="false">About</button>
           <div class="dropdown about-dropdown">
@@ -274,9 +474,11 @@ permalink: /
             <p>We take time to listen, talk you through the work and treat your home with care. We believe quality work makes all the difference, so we pay attention to the details and take pride in the finish. From a fresh new kitchen or bathroom to a conservatory or full renovation, we bring reliable workmanship and a personal touch to every job.</p>
           </div>
         </div>
+
         <div class="nav-item">
           <button class="nav-button" type="button" aria-expanded="false">Contact &amp; Get a Quote</button>
           <div class="dropdown contact-dropdown">
+            <p class="dropdown-label">CONTACT</p>
             <h2>Contact Bobby Pro Builds</h2>
             <div class="contact-options">
               <a href="tel:+447344304402"><strong>07344 304402</strong><small>Tap to call</small></a>
@@ -290,8 +492,9 @@ permalink: /
       </nav>
     </div>
   </header>
-  <main class="blank-page">
-    <section class="hero">
+
+  <main>
+    <section class="hero page-width">
       <div class="hero-copy">
         <h1 class="hero-title">
           <span>Building a Better Home</span>
@@ -299,57 +502,63 @@ permalink: /
         </h1>
         <p class="hero-intro">Professional building, renovation and property improvement services with more than 15 years of hands-on experience. Reliable workmanship, clear communication and attention to detail from start to finish.</p>
       </div>
-      <div class="hero-photo">
+
+      <div class="hero-photo soft-photo">
         <img src="{{ '/assets/images/2ff575ca-cc75-410e-b5b4-560d87022bf0.jpg' | relative_url }}?v=red-lights-1" alt="Completed modern kitchen by Bobby Pro Builds">
       </div>
     </section>
 
-    <section class="services-gallery" aria-labelledby="services-heading">
-      <div class="services-header-row">
-        <h2 id="services-heading" class="services-heading">Building &amp; Renovation</h2>
-        <button class="services-toggle" type="button" aria-expanded="false">
-          Our Services &amp; Gallery <span aria-hidden="true">▾</span>
-        </button>
-      </div>
+    <section class="services-section page-width" aria-labelledby="services-heading">
+      <h2 id="services-heading" class="services-heading">Building &amp; Renovation</h2>
+
+      <button class="services-toggle" type="button" aria-expanded="false">
+        Our Services &amp; Gallery <span aria-hidden="true">▾</span>
+      </button>
 
       <div class="services-dropdown">
-        <p class="gallery-note">More project photos will be added here.</p>
+        <div class="services-dropdown-grid">
+          <div><strong>Renovations &amp; Improvements</strong><span>Kitchens, bathrooms, plastering, decorating, tiling and flooring.</span></div>
+          <div><strong>Extensions &amp; Conversions</strong><span>House extensions, conservatories and loft conversions.</span></div>
+          <div><strong>Exterior &amp; Landscaping</strong><span>Patios, paving, fencing, lawns and garden buildings.</span></div>
+        </div>
       </div>
 
       <div class="services-row">
         <article class="service-item">
-          <div class="service-photo">
+          <div class="service-photo soft-photo">
             <img src="{{ '/assets/images/IMG_4842.jpg' | relative_url }}" alt="Completed garden and landscaping project">
           </div>
-          <p>Patios, paving, fencing, garden clearance, lawns, garden buildings and outdoor spaces.</p>
+          <p><strong>Exterior &amp; Landscaping</strong>Patios, paving, fencing, garden clearance, lawns, garden buildings and outdoor spaces.</p>
         </article>
 
         <article class="service-item">
-          <div class="service-photo">
+          <div class="service-photo soft-photo">
             <img src="{{ '/assets/images/IMG_4841.jpg' | relative_url }}" alt="Completed house extension">
           </div>
-          <p>House extensions, conversions and loft conversions to create more useful space.</p>
+          <p><strong>Extensions &amp; Conversions</strong>House extensions, conservatories and loft conversions to create more useful space.</p>
         </article>
 
         <article class="service-item">
-          <div class="service-photo">
+          <div class="service-photo soft-photo">
             <img src="{{ '/assets/images/IMG_4844.jpg' | relative_url }}" alt="Completed bathroom renovation">
           </div>
-          <p><strong>Renovations &amp; improvements</strong><br>Kitchen, bathrooms, plastering, decorating, flooring and general home improvements.</p>
+          <p><strong>Renovations &amp; Improvements</strong>Kitchens, bathrooms, plastering, decorating, flooring and general home improvements.</p>
         </article>
       </div>
     </section>
   </main>
+
   <section class="trust-strip" aria-label="Why choose Bobby Pro Builds">
-    <div class="trust-row">
+    <div class="trust-row page-width">
       <div class="trust-item"><strong>15+ Years</strong><span>Experience</span></div>
       <div class="trust-item"><strong>Reliable &amp; Trusted</strong><span>Professional service</span></div>
       <div class="trust-item"><strong>Fully Insured</strong><span>For your peace of mind</span></div>
       <div class="trust-item"><strong>Covering England</strong><span>Quality building work</span></div>
     </div>
   </section>
+
   <footer class="site-footer">
-    <div class="footer-row">
+    <div class="footer-inner page-width">
       <div class="footer-details">
         <div>
           <strong>Bobby Pro Builds</strong>
@@ -360,6 +569,7 @@ permalink: /
           <span>Renovations • Extensions • Conversions • Landscaping</span>
         </div>
       </div>
+
       <div class="footer-bottom">
         <span class="copyright">&copy; 2026 Bobby Pro Builds. All rights reserved.</span>
         <div class="footer-socials" aria-label="Social media">
@@ -371,13 +581,18 @@ permalink: /
       </div>
     </div>
   </footer>
+
   <script>
-    const items = document.querySelectorAll('.nav-item');
-    const closeMenus = () => items.forEach(item => {
-      item.classList.remove('open');
-      item.querySelector('.nav-button').setAttribute('aria-expanded','false');
-    });
-    items.forEach(item => {
+    const navItems = document.querySelectorAll('.nav-item');
+
+    const closeMenus = () => {
+      navItems.forEach(item => {
+        item.classList.remove('open');
+        item.querySelector('.nav-button').setAttribute('aria-expanded','false');
+      });
+    };
+
+    navItems.forEach(item => {
       const button = item.querySelector('.nav-button');
       button.addEventListener('click', event => {
         event.stopPropagation();
@@ -389,19 +604,19 @@ permalink: /
         }
       });
     });
-    document.addEventListener('click', closeMenus);
 
-    const servicesSection = document.querySelector('.services-gallery');
-    const servicesToggle = document.querySelector('.services-toggle');
-    if(servicesSection && servicesToggle){
-      servicesToggle.addEventListener('click', () => {
-        const opening = !servicesSection.classList.contains('open');
-        servicesSection.classList.toggle('open', opening);
-        servicesToggle.setAttribute('aria-expanded', String(opening));
-      });
-    }
+    document.addEventListener('click', closeMenus);
     document.addEventListener('keydown', event => {
       if(event.key === 'Escape') closeMenus();
+    });
+
+    const servicesSection = document.querySelector('.services-section');
+    const servicesToggle = document.querySelector('.services-toggle');
+
+    servicesToggle.addEventListener('click', () => {
+      const opening = !servicesSection.classList.contains('open');
+      servicesSection.classList.toggle('open', opening);
+      servicesToggle.setAttribute('aria-expanded', String(opening));
     });
   </script>
 </body>
