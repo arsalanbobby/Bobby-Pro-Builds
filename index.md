@@ -238,6 +238,11 @@ permalink: /
       font-family:Georgia,"Times New Roman",serif;
       font-size:14px;
     }
+
+    /* Move the main hero writing upward */
+    @media(min-width:761px){
+      .hero-copy{transform:translateY(-20px)}
+    }
   </style>
 </head>
 <body>
