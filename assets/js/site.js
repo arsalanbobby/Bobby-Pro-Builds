@@ -39,4 +39,23 @@ document.addEventListener("DOMContentLoaded", () => {
   if (backdrop) backdrop.addEventListener("click", closeAll);
   document.addEventListener("keydown", event => { if (event.key === "Escape") closeAll(); });
   document.querySelectorAll(".main-nav a").forEach(link => link.addEventListener("click", closeAll));
+
+  const pageShell = document.querySelector(".page-shell");
+  function fitWholePage() {
+    if (!pageShell) return;
+    if (window.innerWidth <= 900) {
+      pageShell.style.transform = "";
+      pageShell.style.left = "";
+      pageShell.style.top = "";
+      return;
+    }
+    const designWidth = 1366;
+    const designHeight = 706;
+    const scale = Math.min(window.innerWidth / designWidth, window.innerHeight / designHeight);
+    pageShell.style.transform = `scale(${scale})`;
+    pageShell.style.left = `${Math.max(0, (window.innerWidth - designWidth * scale) / 2)}px`;
+    pageShell.style.top = `${Math.max(0, (window.innerHeight - designHeight * scale) / 2)}px`;
+  }
+  fitWholePage();
+  window.addEventListener("resize", fitWholePage);
 });
