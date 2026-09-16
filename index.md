@@ -202,6 +202,25 @@ permalink: /
       .site-footer{height:108px}
       .footer-row{height:108px;padding-top:20px}
     }
+
+    /* Services and gallery click dropdown */
+    .services-header-row .services-toggle{
+      display:inline-flex;
+      align-items:center;
+      gap:7px;
+      border:0;
+      background:transparent;
+      padding:0;
+      color:#a73534;
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:19px;
+      font-weight:700;
+      cursor:pointer;
+    }
+    .services-toggle span{transition:transform .18s ease}
+    .services-gallery.open .services-toggle span{transform:rotate(180deg)}
+    .services-dropdown{position:static;display:none;opacity:1;visibility:visible;transform:none}
+    .services-gallery.open .services-dropdown{display:block}
   </style>
 </head>
 <body>
@@ -252,10 +271,13 @@ permalink: /
     <section class="services-gallery" aria-labelledby="services-heading">
       <div class="services-header-row">
         <h2 id="services-heading" class="services-heading">Building &amp; Renovation</h2>
-        <p class="services-kicker">Our Services &amp; Gallery</p>
+        <button class="services-toggle" type="button" aria-expanded="false">
+          Our Services &amp; Gallery <span aria-hidden="true">▾</span>
+        </button>
       </div>
 
-      <div class="services-row">
+      <div class="services-dropdown">
+        <div class="services-row">
         <article class="service-item">
           <div class="service-photo">
             <img src="{{ '/assets/images/IMG_4842.jpg' | relative_url }}" alt="Completed garden and landscaping project">
@@ -276,6 +298,7 @@ permalink: /
           </div>
           <p><strong>Renovations &amp; improvements</strong><br>Kitchen, bathrooms, plastering, decorating, flooring and general home improvements.</p>
         </article>
+        </div>
       </div>
     </section>
   </main>
