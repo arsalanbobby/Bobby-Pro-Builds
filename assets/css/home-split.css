@@ -132,3 +132,19 @@
   .project-renovation{left:535px;top:146px}
   .services-trust{bottom:4px}
 }
+
+
+/* Larger kitchen photograph with soft feathered edges, matching the reference */
+@media(min-width:901px){
+  .showcase-grid{grid-template-columns:560px 340px;gap:40px}
+  .showcase-kitchen{
+    width:340px;height:235px;
+    border-radius:0;
+    background:transparent;
+    overflow:visible;
+    -webkit-mask-image:radial-gradient(ellipse at center,#000 56%,rgba(0,0,0,.88)67%,rgba(0,0,0,.35)82%,transparent 100%);
+    mask-image:radial-gradient(ellipse at center,#000 56%,rgba(0,0,0,.88)67%,rgba(0,0,0,.35)82%,transparent 100%);
+  }
+  .showcase-kitchen img{width:100%;height:100%;object-fit:cover;object-position:center 42%}
+  .showcase-kitchen:before{display:none}
+}
