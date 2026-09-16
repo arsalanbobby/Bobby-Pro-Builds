@@ -221,6 +221,11 @@ permalink: /
     .services-gallery.open .services-toggle span{transform:rotate(180deg)}
     .services-dropdown{position:static;display:none;opacity:1;visibility:visible;transform:none}
     .services-gallery.open .services-dropdown{display:block}
+
+    /* Move the Building & Renovation section closer to the introduction */
+    @media(min-width:761px){
+      .services-gallery{margin-top:-24px}
+    }
   </style>
 </head>
 <body>
