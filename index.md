@@ -7,64 +7,41 @@ description: Bobby Pro Builds provides professional building, renovation and pro
   <div class="container showcase-grid">
     <div class="showcase-copy">
       <h1 class="showcase-heading">
-        <span>Building a</span>
-        <strong>Better Home</strong>
+        <strong>Building a Better Home</strong>
         <span>As You Dream Of</span>
       </h1>
       <p class="showcase-intro">Professional building, renovation and property improvement services with more than 15 years of hands-on experience. Reliable workmanship, clear communication and attention to detail from start to finish.</p>
-      <a href="#services" class="btn btn-primary">Our Services »</a>
     </div>
     <div class="showcase-kitchen">
       <img src="{{ '/assets/images/IMG_4849.jpg' | relative_url }}" alt="Completed modern kitchen by Bobby Pro Builds">
-      <p class="kitchen-note">Beautiful<br>Spaces</p>
     </div>
   </div>
 </section>
 
-<section id="services" class="section">
+<section id="services" class="reference-services">
   <div class="container">
-    <p class="eyebrow">Our Services</p>
+    <p class="eyebrow">Our Services &amp; Gallery</p>
     <h2>Building &amp; Renovation</h2>
-    <p class="section-intro">Practical, professional services for improving your home, inside and out.</p>
 
-    <div class="service-grid service-photo-grid">
-      <article class="service-card service-photo-card">
-        <img src="{{ '/assets/images/IMG_4844.jpg' | relative_url }}" alt="Completed bathroom renovation by Bobby Pro Builds">
-        <div class="service-card-body">
-          <h3>Renovations &amp; Improvements</h3>
-          <p>Kitchens, bathrooms, plastering, decorating, tiling, flooring and general home improvements.</p>
-          <a class="service-link" href="#services" aria-label="View renovation and improvement services">View Services »</a>
-        </div>
-      </article>
+    <div class="project-showcase">
+      <img class="project-image project-garden" src="{{ '/assets/images/IMG_4842.jpg' | relative_url }}" alt="Completed garden and landscaping project">
+      <p class="project-copy project-garden-copy">Patios, paving, fencing, garden clearance, lawns, garden buildings and outdoor spaces.</p>
 
-      <article class="service-card service-photo-card">
-        <img src="{{ '/assets/images/07ffef1b-db2a-42eb-b80b-a46892b07543.jpg' | relative_url }}" alt="Completed extension and conversion work by Bobby Pro Builds">
-        <div class="service-card-body">
-          <h3>Extensions &amp; Conversions</h3>
-          <p>House extensions, conservatories and loft conversions to create more useful space.</p>
-          <a class="service-link" href="#services" aria-label="View extension and conversion services">View Services »</a>
-        </div>
-      </article>
+      <p class="project-copy project-extension-copy">House extensions, conversions and loft conversions to create more useful space.</p>
+      <img class="project-image project-extension" src="{{ '/assets/images/07ffef1b-db2a-42eb-b80b-a46892b07543.jpg' | relative_url }}" alt="Completed extension and conversion project">
 
-      <article class="service-card service-photo-card">
-        <img src="{{ '/assets/images/IMG_4842.jpg' | relative_url }}" alt="Completed exterior and landscaping work by Bobby Pro Builds">
-        <div class="service-card-body">
-          <h3>Exterior &amp; Landscaping</h3>
-          <p>Patios, paving, fencing, garden clearance, lawns, garden buildings and outdoor spaces.</p>
-          <a class="service-link" href="#services" aria-label="View exterior and landscaping services">View Services »</a>
-        </div>
-      </article>
+      <p class="project-copy project-renovation-copy">Renovations &amp; improvements<br><span>Kitchen, bathrooms, plastering, decorating, flooring and general home improvements.</span></p>
+      <img class="project-image project-renovation" src="{{ '/assets/images/IMG_4844.jpg' | relative_url }}" alt="Completed bathroom renovation">
     </div>
 
     <div class="services-trust" aria-label="Why choose Bobby Pro Builds">
-      <div><span class="trust-icon">★</span><strong>15+ Years</strong><small>of Experience</small></div>
-      <div><span class="trust-icon">✓</span><strong>Fully Insured</strong><small>Peace of mind</small></div>
-      <div><span class="trust-icon">⌖</span><strong>Covering England</strong><small>Residential &amp; commercial</small></div>
-      <div><span class="trust-icon">◉</span><strong>Quality Work</strong><small>You can trust</small></div>
+      <strong>15+ Years' Experience</strong>
+      <strong>Fully Insured</strong>
+      <strong>Covering England</strong>
+      <strong>Quality Work</strong>
     </div>
   </div>
 </section>
-
 
 <div class="backdrop" data-backdrop></div>
 <aside id="quick-menu" class="panel small-panel" aria-hidden="true"><button class="panel-close" type="button" aria-label="Close">×</button><button class="panel-option js-gallery-open" type="button"><span>Gallery</span><small>View our work</small></button><button class="panel-option js-contact-open" type="button"><span>Contact details</span><small>Call, WhatsApp or email</small></button></aside>
