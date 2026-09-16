@@ -116,6 +116,16 @@ permalink: /
       .services-dropdown{position:static;display:none;opacity:1;visibility:visible;transform:none;margin-top:14px}
       .services-gallery.open .services-dropdown{display:block}
     }
+  
+    /* Contact & Get a Quote dropdown details */
+    .contact-dropdown{width:360px;padding:20px}
+    .contact-dropdown h2{margin:0 0 14px;font-size:22px}
+    .contact-options{display:grid;gap:8px}
+    .contact-options a{display:block;padding:10px 12px;border:1px solid rgba(23,63,52,.16);border-radius:8px;background:rgba(255,255,255,.52);text-decoration:none}
+    .contact-options strong,.contact-options small{display:block}
+    .contact-options strong{color:#173f34;font-size:14px}
+    .contact-options small{margin-top:2px;color:#5d5a50;font-size:12px}
+    @media(max-width:760px){.contact-dropdown{width:auto}}
   </style>
 </head>
 <body>
@@ -135,7 +145,16 @@ permalink: /
         </div>
         <div class="nav-item">
           <button class="nav-button" type="button" aria-expanded="false">Contact &amp; Get a Quote</button>
-          <div class="dropdown"><h2>Contact &amp; Get a Quote</h2></div>
+          <div class="dropdown contact-dropdown">
+            <h2>Contact Bobby Pro Builds</h2>
+            <div class="contact-options">
+              <a href="tel:+447344304402"><strong>07344 304402</strong><small>Tap to call</small></a>
+              <a href="tel:+447833778270"><strong>07833 778270</strong><small>Tap to call</small></a>
+              <a href="mailto:Quickfixhome2@gmail.com"><strong>Quickfixhome2@gmail.com</strong><small>Send an email</small></a>
+              <a href="https://wa.me/447344304402" target="_blank" rel="noopener"><strong>WhatsApp</strong><small>07344 304402</small></a>
+              <a href="https://wa.me/447833778270" target="_blank" rel="noopener"><strong>WhatsApp</strong><small>07833 778270</small></a>
+            </div>
+          </div>
         </div>
       </nav>
     </div>
