@@ -126,6 +126,19 @@ permalink: /
     .contact-options strong{color:#173f34;font-size:14px}
     .contact-options small{margin-top:2px;color:#5d5a50;font-size:12px}
     @media(max-width:760px){.contact-dropdown{width:auto}}
+  
+    /* Compact trust and social footer */
+    .site-footer{height:54px;background:#173f34;color:#fff}
+    .footer-row{width:min(1120px,calc(100% - 40px));height:54px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:18px;white-space:nowrap}
+    .footer-row strong{font-family:Georgia,"Times New Roman",serif;font-size:12px}
+    .copyright{font-size:10px;color:#e6eadf}
+    .footer-socials{display:flex;align-items:center;gap:9px}
+    .footer-socials span{display:grid;place-items:center;width:22px;height:22px;border:1px solid rgba(255,255,255,.65);border-radius:50%;font-weight:700;font-size:12px}
+    @media(min-width:761px){.blank-page{height:calc(100vh - 129px)}}
+    @media(max-width:760px){
+      .site-footer{height:auto}
+      .footer-row{height:auto;min-height:54px;padding:12px 0;flex-wrap:wrap;white-space:normal}
+    }
   </style>
 </head>
 <body>
@@ -203,6 +216,20 @@ permalink: /
       </div>
     </section>
   </main>
+  <footer class="site-footer">
+    <div class="footer-row">
+      <strong>15+ Years’ Experience</strong>
+      <strong>Fully Insured</strong>
+      <strong>Covering England</strong>
+      <strong>Quality Work</strong>
+      <span class="copyright">&copy; 2026 Bobby Pro Builds</span>
+      <div class="footer-socials" aria-label="Social media">
+        <span aria-label="Facebook">f</span>
+        <span aria-label="Instagram">◎</span>
+        <span aria-label="TikTok">♪</span>
+      </div>
+    </div>
+  </footer>
   <script>
     const items = document.querySelectorAll('.nav-item');
     const closeMenus = () => items.forEach(item => {
