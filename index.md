@@ -240,7 +240,7 @@ permalink: /
 
     .services-heading{
       position:relative;
-      top:-102px;
+      top:-78px;
       margin:0 0 10px;
       color:var(--green);
       font-family:Georgia,"Times New Roman",serif;
