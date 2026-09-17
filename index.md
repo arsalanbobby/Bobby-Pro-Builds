@@ -528,21 +528,21 @@ permalink: /
 
       <div class="services-row">
         <article class="service-item">
-          <div class="service-photo soft-photo">
+          <div class="service-photo">
             <img src="{{ '/assets/images/IMG_4842.jpg' | relative_url }}" alt="Completed garden and landscaping project">
           </div>
           <p><strong>Exterior &amp; Landscaping</strong>Patios, paving, fencing, garden clearance, lawns, garden buildings and outdoor spaces.</p>
         </article>
 
         <article class="service-item">
-          <div class="service-photo soft-photo">
+          <div class="service-photo">
             <img src="{{ '/assets/images/IMG_4841.jpg' | relative_url }}" alt="Completed house extension">
           </div>
           <p><strong>Extensions &amp; Conversions</strong>House extensions, conservatories and loft conversions to create more useful space.</p>
         </article>
 
         <article class="service-item">
-          <div class="service-photo soft-photo">
+          <div class="service-photo">
             <img src="{{ '/assets/images/IMG_4844.jpg' | relative_url }}" alt="Completed bathroom renovation">
           </div>
           <p><strong>Renovations &amp; Improvements</strong>Kitchens, bathrooms, plastering, decorating, flooring and general home improvements.</p>
