@@ -9,7 +9,7 @@ permalink: /
   <title>Bobby Pro Builds</title>
   <style>
     :root{
-      --cream:#f0efdc;
+      --cream:#e4e1db;
       --green:#173f34;
       --light-green:#2f8a51;
       --red:#a73534;
@@ -37,7 +37,7 @@ permalink: /
     .site-header{
       position:relative;
       z-index:20;
-      background:rgba(240,239,220,.98);
+      background:rgba(228,225,219,.98);
       border-bottom:1px solid var(--line);
     }
 
@@ -214,8 +214,8 @@ permalink: /
       inset:0;
       pointer-events:none;
       background:
-        linear-gradient(to right,var(--cream) 0,rgba(240,239,220,.78) 7%,transparent 21%,transparent 79%,rgba(240,239,220,.78) 93%,var(--cream) 100%),
-        linear-gradient(to bottom,var(--cream) 0,rgba(240,239,220,.78) 7%,transparent 21%,transparent 79%,rgba(240,239,220,.78) 93%,var(--cream) 100%);
+        linear-gradient(to right,var(--cream) 0,rgba(228,225,219,.78) 7%,transparent 21%,transparent 79%,rgba(228,225,219,.78) 93%,var(--cream) 100%),
+        linear-gradient(to bottom,var(--cream) 0,rgba(228,225,219,.78) 7%,transparent 21%,transparent 79%,rgba(228,225,219,.78) 93%,var(--cream) 100%);
     }
 
     .hero-photo{
@@ -326,7 +326,7 @@ permalink: /
 
     /* Trust row */
     .trust-strip{
-      background:#e9ead9;
+      background:#dcded8;
       border-top:1px solid var(--line);
     }
 
