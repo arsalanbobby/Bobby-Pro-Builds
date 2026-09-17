@@ -9,7 +9,7 @@ permalink: /
   <title>Bobby Pro Builds</title>
   <style>
     :root{
-      --cream:#ead8cc;
+      --cream:#e1ddc7;
       --green:#173f34;
       --light-green:#2f8a51;
       --red:#a73534;
@@ -21,7 +21,7 @@ permalink: /
     html{scroll-behavior:smooth}
     body{
       margin:0;
-      background:linear-gradient(135deg,#f3e9df 0%,#e4c9b8 52%,#efe2d7 100%);
+      background:linear-gradient(135deg,#e7e7cf 0%,#d9d4b8 48%,#d7ad98 100%);
       color:var(--text);
       font-family:Arial,sans-serif;
       font-size:16px;
@@ -37,7 +37,7 @@ permalink: /
     .site-header{
       position:relative;
       z-index:20;
-      background:rgba(234,216,204,.98);
+      background:rgba(225,221,199,.98);
       border-bottom:1px solid var(--line);
     }
 
@@ -205,7 +205,7 @@ permalink: /
     .soft-photo{
       position:relative;
       overflow:hidden;
-      background:linear-gradient(135deg,#f3e9df 0%,#e4c9b8 52%,#efe2d7 100%);
+      background:linear-gradient(135deg,#e7e7cf 0%,#d9d4b8 48%,#d7ad98 100%);
     }
 
     .soft-photo::after{
@@ -214,8 +214,8 @@ permalink: /
       inset:0;
       pointer-events:none;
       background:
-        linear-gradient(to right,var(--cream) 0,rgba(234,216,204,.78) 7%,transparent 21%,transparent 79%,rgba(234,216,204,.78) 93%,var(--cream) 100%),
-        linear-gradient(to bottom,var(--cream) 0,rgba(234,216,204,.78) 7%,transparent 21%,transparent 79%,rgba(234,216,204,.78) 93%,var(--cream) 100%);
+        linear-gradient(to right,var(--cream) 0,rgba(225,221,199,.78) 7%,transparent 21%,transparent 79%,rgba(225,221,199,.78) 93%,var(--cream) 100%),
+        linear-gradient(to bottom,var(--cream) 0,rgba(225,221,199,.78) 7%,transparent 21%,transparent 79%,rgba(225,221,199,.78) 93%,var(--cream) 100%);
     }
 
     .hero-photo{
@@ -326,7 +326,7 @@ permalink: /
 
     /* Trust row */
     .trust-strip{
-      background:#dfc5b4;
+      background:#d4cfad;
       border-top:1px solid var(--line);
     }
 
