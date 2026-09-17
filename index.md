@@ -470,7 +470,6 @@ permalink: /
   </style>
 </head>
 <body>
-  <div id="site-shell">
   <header class="site-header">
     <div class="header-inner page-width">
       <a class="logo" href="/" aria-label="Bobby Pro Builds home">
@@ -596,35 +595,8 @@ permalink: /
       </div>
     </div>
   </footer>
-  </div>
 
   <script>
-    const siteShell = document.getElementById('site-shell');
-
-    const fitDesktopPage = () => {
-      siteShell.style.transform = 'none';
-      siteShell.style.width = '100%';
-      document.body.style.height = 'auto';
-      document.body.style.overflow = '';
-
-      if(window.innerWidth > 820){
-        const firstHeight = siteShell.scrollHeight;
-        const firstScale = Math.min(1, window.innerHeight / firstHeight);
-        siteShell.style.width = (100 / firstScale) + '%';
-
-        const finalHeight = siteShell.scrollHeight;
-        const scale = Math.min(1, window.innerHeight / finalHeight);
-        siteShell.style.width = (100 / scale) + '%';
-        siteShell.style.transform = 'scale(' + scale + ')';
-        siteShell.style.transformOrigin = 'top left';
-        document.body.style.height = (finalHeight * scale) + 'px';
-        document.body.style.overflow = 'hidden';
-      }
-    };
-
-    window.addEventListener('load', fitDesktopPage);
-    window.addEventListener('resize', fitDesktopPage);
-
     const navItems = document.querySelectorAll('.nav-item');
 
     const closeMenus = () => {
@@ -659,7 +631,6 @@ permalink: /
       const opening = !servicesSection.classList.contains('open');
       servicesSection.classList.toggle('open', opening);
       servicesToggle.setAttribute('aria-expanded', String(opening));
-      requestAnimationFrame(fitDesktopPage);
     });
   </script>
 </body>
