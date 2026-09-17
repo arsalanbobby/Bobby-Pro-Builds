@@ -2,7 +2,6 @@
 layout: null
 permalink: /
 ---
-<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -56,8 +55,8 @@ permalink: /
 
     .logo img{
       display:block;
-      width:285px;
-      max-width:44vw;
+      width:340px;
+      max-width:50vw;
       height:auto;
     }
 
@@ -425,7 +424,7 @@ permalink: /
     @media(max-width:820px){
       .page-width{width:min(100% - 32px,680px)}
       .header-inner{min-height:76px;gap:18px}
-      .logo img{width:220px;max-width:45vw}
+      .logo img{width:270px;max-width:50vw}
       .navigation{gap:13px}
       .nav-button{font-size:13px}
       .hero{grid-template-columns:1fr;gap:24px;padding:34px 0}
