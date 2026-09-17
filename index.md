@@ -341,7 +341,7 @@ permalink: /
 
     /* Trust row */
     .trust-strip{
-      background:#aa987f;
+      background:#fff;
       border-top:1px solid var(--line);
     }
 
