@@ -37,7 +37,7 @@ permalink: /
     .site-header{
       position:relative;
       z-index:20;
-      background:linear-gradient(90deg,#fff 0%,#fff 47%,rgba(200,184,159,.98) 47%,rgba(200,184,159,.98) 100%);
+      background:rgba(200,184,159,.98);
       border-bottom:1px solid var(--line);
     }
 
@@ -49,8 +49,23 @@ permalink: /
     }
 
     .logo{
-      display:block;
+      position:relative;
+      align-self:stretch;
+      display:flex;
+      align-items:center;
       margin-right:auto;
+      padding-right:42px;
+      background:#fff;
+    }
+
+    .logo::before{
+      content:"";
+      position:absolute;
+      top:0;
+      right:100%;
+      bottom:0;
+      width:100vw;
+      background:#fff;
     }
 
     .logo img{
