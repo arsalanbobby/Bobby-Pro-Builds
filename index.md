@@ -297,9 +297,7 @@ permalink: /
       line-height:1.45;
     }
 
-    .services-toggle,
-    .services-dropdown,
-    .services-row{
+    .services-toggle{
       position:relative;
       top:-28px;
     }
