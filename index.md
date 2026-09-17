@@ -421,6 +421,10 @@ permalink: /
       font-weight:800;
     }
 
+    @media(min-width:821px){
+      .hero-copy{transform:translateY(-32px)}
+    }
+
     @media(max-width:820px){
       .page-width{width:min(100% - 32px,680px)}
       .header-inner{min-height:76px;gap:18px}
