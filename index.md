@@ -6,7 +6,30 @@ permalink: /
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bobby Pro Builds</title>
+  <title>Builders, Renovations &amp; Home Improvements | Bobby Pro Builds</title>
+  <meta name="description" content="Bobby Pro Builds provides reliable building, renovations, house extensions, kitchens, bathrooms, conservatories and property improvements across England.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://bobbyprobuilds.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Builders, Renovations &amp; Home Improvements | Bobby Pro Builds">
+  <meta property="og:description" content="Reliable building, renovation and property improvement services with more than 15 years of hands-on experience.">
+  <meta property="og:url" content="https://bobbyprobuilds.com/">
+  <meta property="og:image" content="https://bobbyprobuilds.com/assets/images/2ff575ca-cc75-410e-b5b4-560d87022bf0.jpg">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"HomeAndConstructionBusiness",
+    "name":"Bobby Pro Builds",
+    "url":"https://bobbyprobuilds.com/",
+    "logo":"https://bobbyprobuilds.com/assets/logo.svg",
+    "image":"https://bobbyprobuilds.com/assets/images/2ff575ca-cc75-410e-b5b4-560d87022bf0.jpg",
+    "description":"Professional building, renovation and property improvement services across England.",
+    "telephone":["+447344304402","+447833778270"],
+    "email":"Quickfixhome2@gmail.com",
+    "areaServed":{"@type":"Country","name":"England"},
+    "priceRange":"££"
+  }
+  </script>
   <style>
     :root{
       --cream:#c8b89f;
