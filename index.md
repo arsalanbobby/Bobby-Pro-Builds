@@ -37,7 +37,7 @@ permalink: /
     .site-header{
       position:relative;
       z-index:20;
-      background:rgba(200,184,159,.98);
+      background:linear-gradient(90deg,#fff 0%,#fff 47%,rgba(200,184,159,.98) 47%,rgba(200,184,159,.98) 100%);
       border-bottom:1px solid var(--line);
     }
 
@@ -442,6 +442,10 @@ permalink: /
       .trust-row{grid-template-columns:repeat(2,1fr)}
       .footer-details{grid-template-columns:1fr;gap:18px}
       .dropdown{position:fixed;top:76px;left:16px;right:16px;width:auto;max-height:calc(100vh - 92px);overflow:auto}
+    }
+
+    @media(max-width:820px){
+      .site-header{background:#fff}
     }
 
     @media(max-width:560px){
