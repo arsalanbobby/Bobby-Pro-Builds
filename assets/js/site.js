@@ -6,6 +6,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function closeMenu() {
     if (menu) { menu.classList.remove("open"); menu.setAttribute("aria-hidden", "true"); }
+    document.querySelectorAll(".mobile-dropdown-toggle").forEach(button => {
+      button.setAttribute("aria-expanded", "false");
+      const list = document.getElementById(button.getAttribute("aria-controls"));
+      if (list) list.hidden = true;
+    });
     if (backdrop) backdrop.classList.remove("open");
     if (toggle) toggle.setAttribute("aria-expanded", "false");
     document.body.classList.remove("panel-open");
@@ -26,6 +31,13 @@ document.addEventListener("DOMContentLoaded", () => {
   if (toggle) toggle.addEventListener("click", () => menu && menu.classList.contains("open") ? closeMenu() : openMenu());
   if (backdrop) backdrop.addEventListener("click", closeMenu);
   document.querySelectorAll(".panel-close, .mobile-panel-nav a").forEach(item => item.addEventListener("click", closeMenu));
+  document.querySelectorAll(".mobile-dropdown-toggle").forEach(button => button.addEventListener("click", () => {
+    const list = document.getElementById(button.getAttribute("aria-controls"));
+    if (!list) return;
+    const willOpen = button.getAttribute("aria-expanded") !== "true";
+    button.setAttribute("aria-expanded", String(willOpen));
+    list.hidden = !willOpen;
+  }));
   document.querySelectorAll("[data-gallery-src]").forEach(button => button.addEventListener("click", () => {
     if (!lightbox) return;
     const image = lightbox.querySelector("img");
