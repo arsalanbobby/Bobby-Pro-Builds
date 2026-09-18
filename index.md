@@ -68,8 +68,8 @@ description: Bobby Pro Builds provides extensions, renovations, kitchens, bathro
   <button class="panel-close" type="button" aria-label="Close menu">×</button>
   <nav class="mobile-panel-nav" aria-label="Mobile navigation">
     <a href="#home">Home</a>
-    <a href="#services">Services</a>
-    <ul class="mobile-service-list" aria-label="Building services">
+    <button class="mobile-dropdown-toggle" type="button" aria-expanded="false" aria-controls="mobile-services-list">Services</button>
+    <ul id="mobile-services-list" class="mobile-service-list" aria-label="Building services" hidden>
       <li>Extensions &amp; conversions</li>
       <li>Kitchen renovations</li>
       <li>Bathroom renovations</li>
@@ -77,8 +77,8 @@ description: Bobby Pro Builds provides extensions, renovations, kitchens, bathro
       <li>Roofing &amp; exterior repairs</li>
       <li>Property improvements</li>
     </ul>
-    <a href="#about">About</a>
-    <ul class="mobile-service-list" aria-label="About Bobby Pro Builds">
+    <button class="mobile-dropdown-toggle" type="button" aria-expanded="false" aria-controls="mobile-about-list">About</button>
+    <ul id="mobile-about-list" class="mobile-service-list" aria-label="About Bobby Pro Builds" hidden>
       <li>15+ years of hands-on experience</li>
       <li>Reliable and trusted service</li>
       <li>Fully insured</li>
