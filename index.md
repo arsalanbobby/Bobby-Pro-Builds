@@ -78,13 +78,10 @@ description: Bobby Pro Builds provides extensions, renovations, kitchens, bathro
       <li>Property improvements</li>
     </ul>
     <button class="mobile-dropdown-toggle" type="button" aria-expanded="false" aria-controls="mobile-about-list">About</button>
-    <ul id="mobile-about-list" class="mobile-service-list" aria-label="About Bobby Pro Builds" hidden>
-      <li>15+ years of hands-on experience</li>
-      <li>Reliable and trusted service</li>
-      <li>Fully insured</li>
-      <li>Clear communication</li>
-      <li>Covering London, Surrey and across England</li>
-    </ul>
+    <div id="mobile-about-list" class="mobile-about-copy" hidden>
+      <p>Bobby Pro Builds started over 15 years ago when two friends decided to work together and build a business they could be proud of.</p>
+      <p>They listen to what every customer wants and complete each project with care. Their aim is to provide honest, reliable service and quality work that customers will be happy with for years to come.</p>
+    </div>
     <a href="#gallery">Gallery</a>
     <a href="#contact">Contact</a>
   </nav>
