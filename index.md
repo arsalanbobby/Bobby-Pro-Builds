@@ -64,5 +64,22 @@ description: Bobby Pro Builds provides extensions, renovations, kitchens, bathro
 </section>
 
 <div class="backdrop" data-backdrop></div>
-<aside id="quick-menu" class="panel" aria-hidden="true"><button class="panel-close" type="button" aria-label="Close menu">×</button><nav class="mobile-panel-nav" aria-label="Mobile navigation"><a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></nav></aside>
+<aside id="quick-menu" class="panel" aria-hidden="true">
+  <button class="panel-close" type="button" aria-label="Close menu">×</button>
+  <nav class="mobile-panel-nav" aria-label="Mobile navigation">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <ul class="mobile-service-list" aria-label="Building services">
+      <li>Extensions &amp; conversions</li>
+      <li>Kitchen renovations</li>
+      <li>Bathroom renovations</li>
+      <li>General building work</li>
+      <li>Roofing &amp; exterior repairs</li>
+      <li>Property improvements</li>
+    </ul>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</aside>
 <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Project image"><button class="lightbox-close" type="button" aria-label="Close image">×</button><img src="" alt=""></div>
