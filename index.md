@@ -1,6 +1,6 @@
 ---
-title: Home
-description: Bobby Pro Builds provides professional building, renovation and property improvement services across England.
+title: Builders & Renovations in London and Surrey
+description: Bobby Pro Builds provides extensions, renovations, kitchens, bathrooms and property improvements across London, Surrey and throughout England.
 ---
 
 <section id="home" class="hero">
@@ -8,7 +8,7 @@ description: Bobby Pro Builds provides professional building, renovation and pro
   <div class="hero-shade"></div>
   <div class="container hero-inner">
     <div class="hero-copy">
-      <p class="eyebrow eyebrow-light">Building • Renovation • Landscaping</p>
+      <p class="eyebrow eyebrow-light">Builders &amp; Renovation Specialists • London &amp; Surrey</p>
       <h1>Building a Better Home<br><span>As You Dream Of</span></h1>
       <p class="hero-intro">From thoughtful renovations to complete home improvements, we help turn your ideas into a home that works better for you.</p>
       <div class="hero-actions"><a class="btn btn-brick" href="#contact">Get a Free Quote</a><a class="btn btn-ghost" href="#gallery">View Our Work</a></div>
@@ -18,7 +18,7 @@ description: Bobby Pro Builds provides professional building, renovation and pro
 
 <section class="trust-strip" aria-label="Why choose Bobby Pro Builds">
   <div class="container trust-grid">
-    <div><strong>15+ Years</strong><span>Hands-on experience</span></div><div><strong>Reliable &amp; Trusted</strong><span>Clear, professional service</span></div><div><strong>Fully Insured</strong><span>For your peace of mind</span></div><div><strong>Covering England</strong><span>Quality building work</span></div>
+    <div><strong>15+ Years</strong><span>Hands-on experience</span></div><div><strong>Reliable &amp; Trusted</strong><span>Clear, professional service</span></div><div><strong>Fully Insured</strong><span>For your peace of mind</span></div><div><strong>London, Surrey &amp; Beyond</strong><span>Work accepted across England</span></div>
   </div>
 </section>
 
