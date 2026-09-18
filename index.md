@@ -88,6 +88,7 @@ description: Bobby Pro Builds provides extensions, renovations, kitchens, bathro
       <p>New building and renovation photos will be added here.</p>
     </div>
     <a href="#contact">Contact</a>
+    <a class="sister-menu-link" href="https://www.bobbyprolandscapes.com/">Bobby Pro Landscapes →</a>
   </nav>
 </aside>
 <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Project image"><button class="lightbox-close" type="button" aria-label="Close image">×</button><img src="" alt=""></div>
