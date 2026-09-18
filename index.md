@@ -82,7 +82,11 @@ description: Bobby Pro Builds provides extensions, renovations, kitchens, bathro
       <p>Bobby Pro Builds started over 15 years ago when two friends decided to work together and build a business they could be proud of.</p>
       <p>They listen to what every customer wants and complete each project with care. Their aim is to provide honest, reliable service and quality work that customers will be happy with for years to come.</p>
     </div>
-    <a href="#gallery">Gallery</a>
+    <button class="mobile-dropdown-toggle" type="button" aria-expanded="false" aria-controls="mobile-gallery-list">Gallery</button>
+    <div id="mobile-gallery-list" class="mobile-about-copy" hidden>
+      <p><strong>Before &amp; Finished Projects</strong></p>
+      <p>New building and renovation photos will be added here.</p>
+    </div>
     <a href="#contact">Contact</a>
   </nav>
 </aside>
