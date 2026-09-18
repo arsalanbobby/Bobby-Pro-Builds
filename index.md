@@ -11,7 +11,7 @@ description: Bobby Pro Builds provides professional building, renovation and pro
       <p class="eyebrow eyebrow-light">Building • Renovation • Landscaping</p>
       <h1>Building a Better Home<br><span>As You Dream Of</span></h1>
       <p class="hero-intro">From thoughtful renovations to complete home improvements, we help turn your ideas into a home that works better for you.</p>
-      <div class="hero-actions"><a class="btn btn-brick" href="#contact">Get a Free Quote</a><a class="btn btn-ghost" href="tel:+447344304402">Call 07344 304402</a></div>
+      <div class="hero-actions"><a class="btn btn-brick" href="#contact">Get a Free Quote</a><a class="btn btn-ghost" href="#gallery">View Our Work</a></div>
     </div>
   </div>
 </section>
@@ -63,7 +63,6 @@ description: Bobby Pro Builds provides professional building, renovation and pro
   </div>
 </section>
 
-<a class="floating-whatsapp" href="https://wa.me/447344304402" target="_blank" rel="noopener" aria-label="Contact Bobby Pro Builds on WhatsApp">WhatsApp</a>
 <div class="backdrop" data-backdrop></div>
 <aside id="quick-menu" class="panel" aria-hidden="true"><button class="panel-close" type="button" aria-label="Close menu">×</button><nav class="mobile-panel-nav" aria-label="Mobile navigation"><a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></nav></aside>
 <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Project image"><button class="lightbox-close" type="button" aria-label="Close image">×</button><img src="" alt=""></div>
