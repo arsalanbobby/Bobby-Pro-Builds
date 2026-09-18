@@ -10,7 +10,7 @@ description: Bobby Pro Builds provides professional building, renovation and pro
     <div class="hero-copy">
       <p class="eyebrow eyebrow-light">Building • Renovation • Landscaping</p>
       <h1>Building a Better Home<br><span>As You Dream Of</span></h1>
-      <p class="hero-intro">Quality building and home improvements backed by more than 15 years of hands-on experience. Honest advice, careful workmanship and clear communication from start to finish.</p>
+      <p class="hero-intro">From thoughtful renovations to complete home improvements, we help turn your ideas into a home that works better for you.</p>
       <div class="hero-actions"><a class="btn btn-brick" href="#contact">Get a Free Quote</a><a class="btn btn-ghost" href="tel:+447344304402">Call 07344 304402</a></div>
     </div>
   </div>
@@ -40,7 +40,7 @@ description: Bobby Pro Builds provides professional building, renovation and pro
 <section id="about" class="section about-section">
   <div class="container about-grid">
     <div class="about-image"><img src="{{ '/assets/images/07ffef1b-db2a-42eb-b80b-a46892b07543.jpg' | relative_url }}" alt="Completed exterior home renovation by Bobby Pro Builds"><div class="experience-mark"><strong>15+</strong><span>Years of<br>experience</span></div></div>
-    <div class="about-copy"><p class="eyebrow">About Bobby Pro Builds</p><h2>Good Work Starts With Listening</h2><p>For more than 15 years, we have helped homeowners improve the places they live. We take time to understand what you want, explain the work clearly and treat your home with respect.</p><p>Whether you are planning a new kitchen, bathroom, conservatory, extension or garden transformation, our aim is simple: dependable service and quality work you will be happy to recommend.</p><a class="text-link" href="#contact">Tell us about your project <span>→</span></a></div>
+    <div class="about-copy"><p class="eyebrow">About Bobby Pro Builds</p><h2>Good Work Starts With Listening</h2><p>Every home and every customer is different. We take time to understand your ideas, offer practical advice and explain the work clearly before we begin.</p><p>We work carefully, keep you informed and treat your property with respect. The result should not only look good—it should feel right for the way you live.</p><a class="text-link" href="#contact">Tell us about your project <span>→</span></a></div>
   </div>
 </section>
 
