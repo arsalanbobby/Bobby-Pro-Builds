@@ -5,6 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}">
+  <meta property="og:description" content="{{ page.description | default: site.description }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "GeneralContractor",
+    "name": "Bobby Pro Builds",
+    "url": "https://www.bobbyprobuilds.com/",
+    "description": "Builders and renovation specialists serving London, Surrey and customers across England.",
+    "telephone": "+44 7344 304402",
+    "email": "Quickfixhome2@gmail.com",
+    "areaServed": ["London", "Surrey", "England"],
+    "knowsAbout": ["House extensions", "Loft conversions", "Conservatories", "Kitchen renovations", "Bathroom renovations", "Property improvements"]
+  }
+  </script>
   <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/home-split.css' | relative_url }}">
