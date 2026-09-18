@@ -59,7 +59,7 @@ description: Bobby Pro Builds provides extensions, renovations, kitchens, bathro
 <section id="contact" class="section contact-section">
   <div class="container contact-wrap">
     <div class="contact-copy"><p class="eyebrow eyebrow-light">Start Your Project</p><h2>Let’s Build Something<br>Better Together</h2><p>Tell us what you would like to improve and we will discuss the next steps with you. Contact us for a free, no-obligation quote.</p></div>
-    <div class="contact-options"><a href="tel:+447344304402"><span>Call us</span><strong>07344 304402</strong></a><a href="tel:+447833778270"><span>Alternative number</span><strong>07833 778270</strong></a><a href="mailto:Quickfixhome2@gmail.com"><span>Email us</span><strong>Quickfixhome2@gmail.com</strong></a><a class="whatsapp-option" href="https://wa.me/447344304402" target="_blank" rel="noopener"><span>WhatsApp</span><strong>Message us now →</strong></a></div>
+    <div class="contact-options"><a href="tel:+447344304402"><span>Call us</span><strong>07344 304402</strong></a><a href="tel:+447833778270"><span>Alternative number</span><strong>07833 778270</strong></a><a href="mailto:Quickfixhome2@gmail.com"><span>Email us</span><strong>Quickfixhome2@gmail.com</strong></a><a class="whatsapp-option" href="https://wa.me/447344304402" target="_blank" rel="noopener"><span>WhatsApp</span><strong>Message us now →</strong></a><a class="address-option" href="https://www.google.com/maps/search/?api=1&amp;query=220+Norbury+Avenue+Thornton+Heath+Surrey+CR7+8AJ" target="_blank" rel="noopener"><span>Address</span><strong>220 Norbury Avenue<br>Thornton Heath, Surrey<br>CR7 8AJ</strong></a></div>
   </div>
 </section>
 
